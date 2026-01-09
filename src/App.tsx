@@ -19,7 +19,7 @@ function App() {
       <div className="card">
         <button
           onClick={() => setCount((count) => count + 1)}
-          className="font-bold text-2xl"
+          className="text-2xl font-bold"
         >
           count is {count}
         </button>
