@@ -1,14 +1,14 @@
 const Title = ()=>{
   return (
-    <h1 className="text-center font-extrabold text-5xl uppercase">Premier League Table</h1>
+    <h1 className="text-center font-title font-bold text-5xl">Premier League Table</h1>
   )
 }
 
 const HeaderRow = () => {
   return (
     <>
-      <div className="text-right uppercase font-bold mb-2">Points</div>
-      <div className="text-left uppercase font-bold mb-2">Clubs</div>
+      <div className="text-right uppercase font-title font-bold mb-2 tracking-wider">Points</div>
+      <div className="text-left uppercase font-title font-bold mb-2 tracking-wider">Clubs</div>
     </>
   );
 };
@@ -78,7 +78,7 @@ function App() {
       <div className="mx-auto max-w-md p-3 flex flex-col gap-3">
         <Title />
 
-        <div className="grid grid-cols-[1fr_1fr] gap-x-5">
+        <div className="grid grid-cols-[1fr_1fr] gap-x-5 font-mono">
           <HeaderRow />
           {data.map((x) => (
             <PointsRow points={x.points} clubs={x.clubs} />

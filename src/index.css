@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Roboto Mono", sans-serif;
+  --font-title: "Roboto", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Roboto Mono", ui-monospace, monospace;
 }
