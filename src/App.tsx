@@ -75,7 +75,7 @@ function App() {
 
   return (
     <>
-      <div className="mx-auto max-w-md p-3 flex flex-col gap-3">
+      <div className="mx-auto max-w-md p-4 flex flex-col gap-4">
         <Title />
 
         <div className="grid grid-cols-[1fr_1fr] gap-x-5 font-mono">
