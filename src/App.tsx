@@ -7,8 +7,8 @@ const Title = ()=>{
 const HeaderRow = () => {
   return (
     <>
-      <div className="text-center uppercase font-bold text-sm text-current/75">Points</div>
-      <div className="text-center uppercase font-bold text-sm text-current/75">Clubs</div>
+      <div className="text-right uppercase font-bold mb-2">Points</div>
+      <div className="text-left uppercase font-bold mb-2">Clubs</div>
     </>
   );
 };
@@ -16,8 +16,8 @@ const HeaderRow = () => {
 const PointsRow = ({ points, clubs }: { points: number; clubs: string[] }) => {
   return (
     <>
-      <div className="text-center">{points}</div>
-      <div className="flex flex-row gap-2">
+      <div className="text-right">{points}</div>
+      <div className="flex flex-row gap-4">
         {clubs.map((c) => (
           <span>{c}</span>
         ))}
@@ -78,7 +78,7 @@ function App() {
       <div className="mx-auto max-w-md p-3 flex flex-col gap-3">
         <Title />
 
-        <div className="grid grid-cols-[auto_1fr] gap-x-2">
+        <div className="grid grid-cols-[1fr_1fr] gap-x-5">
           <HeaderRow />
           {data.map((x) => (
             <PointsRow points={x.points} clubs={x.clubs} />
