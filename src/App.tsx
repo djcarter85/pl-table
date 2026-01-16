@@ -4,6 +4,17 @@ const Title = () => {
   );
 };
 
+const LastUpdated = () => {
+  return (
+    <div className="flex flex-row items-baseline gap-3">
+      <div className="text-sm text-gray-700 uppercase tracking-wide">
+        Last updated
+      </div>
+      <div className="text-lg">16 Jan 2026</div>
+    </div>
+  );
+};
+
 const HeaderRow = () => {
   return (
     <>
@@ -81,6 +92,7 @@ function App() {
     <>
       <div className="mx-auto flex max-w-md flex-col gap-4 p-4">
         <Title />
+        <LastUpdated />
 
         <div className="grid grid-cols-[1fr_1fr] gap-x-5 font-mono">
           <HeaderRow />
