@@ -1,8 +1,6 @@
 const Title = () => {
   return (
-    <h1 className="font-title text-center text-5xl font-bold">
-      Premier League Table
-    </h1>
+    <h1 className="text-center text-5xl font-bold">Premier League Table</h1>
   );
 };
 
