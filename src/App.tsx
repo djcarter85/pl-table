@@ -1,14 +1,20 @@
-const Title = ()=>{
+const Title = () => {
   return (
-    <h1 className="text-center font-title font-bold text-5xl">Premier League Table</h1>
-  )
-}
+    <h1 className="font-title text-center text-5xl font-bold">
+      Premier League Table
+    </h1>
+  );
+};
 
 const HeaderRow = () => {
   return (
     <>
-      <div className="text-right uppercase font-title font-bold mb-2 tracking-wider">Points</div>
-      <div className="text-left uppercase font-title font-bold mb-2 tracking-wider">Clubs</div>
+      <div className="font-title mb-2 text-right font-bold tracking-wider uppercase">
+        Points
+      </div>
+      <div className="font-title mb-2 text-left font-bold tracking-wider uppercase">
+        Clubs
+      </div>
     </>
   );
 };
@@ -75,7 +81,7 @@ function App() {
 
   return (
     <>
-      <div className="mx-auto max-w-md p-4 flex flex-col gap-4">
+      <div className="mx-auto flex max-w-md flex-col gap-4 p-4">
         <Title />
 
         <div className="grid grid-cols-[1fr_1fr] gap-x-5 font-mono">
