@@ -7,10 +7,10 @@ const Title = () => {
 const LastUpdated = () => {
   return (
     <div className="flex flex-row items-baseline gap-3">
-      <div className="text-sm text-gray-700 uppercase tracking-wide">
+      <div className="text-sm tracking-wide text-gray-700 uppercase">
         Last updated
       </div>
-      <div className="text-lg">16 Jan 2026</div>
+      <div className="text-lg">18 Jan 2026 22:00</div>
     </div>
   );
 };
@@ -43,7 +43,8 @@ const PointsRow = ({ points, clubs }: { points: number; clubs: string[] }) => {
 
 function App() {
   const data = [
-    { points: 49, clubs: ["ARS"] },
+    { points: 50, clubs: ["ARS"] },
+    { points: 49, clubs: [] },
     { points: 48, clubs: [] },
     { points: 47, clubs: [] },
     { points: 46, clubs: [] },
@@ -56,36 +57,35 @@ function App() {
     { points: 39, clubs: [] },
     { points: 38, clubs: [] },
     { points: 37, clubs: [] },
-    { points: 36, clubs: [] },
-    { points: 35, clubs: ["LIV"] },
-    { points: 34, clubs: [] },
-    { points: 33, clubs: ["BRE"] },
-    { points: 32, clubs: ["NEW", "MNU"] },
-    { points: 31, clubs: ["CHE", "FUL"] },
-    { points: 30, clubs: ["SUN"] },
-    { points: 29, clubs: ["BRI", "EVE"] },
+    { points: 36, clubs: ["LIV"] },
+    { points: 35, clubs: ["MNU"] },
+    { points: 34, clubs: ["CHE"] },
+    { points: 33, clubs: ["BRE", "NEW", "SUN"] },
+    { points: 32, clubs: ["EVE"] },
+    { points: 31, clubs: ["FUL"] },
+    { points: 30, clubs: [] },
+    { points: 29, clubs: ["BRI"] },
     { points: 28, clubs: ["CRY"] },
     { points: 27, clubs: ["TOT"] },
     { points: 26, clubs: ["BOU"] },
-    { points: 25, clubs: [] },
+    { points: 25, clubs: ["LEE"] },
     { points: 24, clubs: [] },
     { points: 23, clubs: [] },
-    { points: 22, clubs: ["LEE"] },
-    { points: 21, clubs: ["FOR"] },
+    { points: 22, clubs: ["FOR"] },
+    { points: 21, clubs: [] },
     { points: 20, clubs: [] },
     { points: 19, clubs: [] },
     { points: 18, clubs: [] },
-    { points: 17, clubs: [] },
+    { points: 17, clubs: ["WHU"] },
     { points: 16, clubs: [] },
     { points: 15, clubs: [] },
-    { points: 14, clubs: ["WHU"] },
-    { points: 13, clubs: ["BUR"] },
+    { points: 14, clubs: ["BUR"] },
+    { points: 13, clubs: [] },
     { points: 12, clubs: [] },
     { points: 11, clubs: [] },
     { points: 10, clubs: [] },
     { points: 9, clubs: [] },
-    { points: 8, clubs: [] },
-    { points: 7, clubs: ["WOL"] },
+    { points: 8, clubs: ["WOL"] },
   ];
 
   return (
