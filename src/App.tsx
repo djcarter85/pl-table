@@ -10,7 +10,7 @@ const LastUpdated = () => {
       <div className="text-sm tracking-wide text-gray-700 uppercase">
         Last updated
       </div>
-      <div className="text-lg">18 Jan 2026 22:00</div>
+      <div className="text-lg">22 Jan 2026 22:00</div>
     </div>
   );
 };
@@ -63,11 +63,11 @@ function App() {
     { points: 33, clubs: ["BRE", "NEW", "SUN"] },
     { points: 32, clubs: ["EVE"] },
     { points: 31, clubs: ["FUL"] },
-    { points: 30, clubs: [] },
-    { points: 29, clubs: ["BRI"] },
+    { points: 30, clubs: ["BRI"] },
+    { points: 29, clubs: [] },
     { points: 28, clubs: ["CRY"] },
-    { points: 27, clubs: ["TOT"] },
-    { points: 26, clubs: ["BOU"] },
+    { points: 27, clubs: ["TOT", "BOU"] },
+    { points: 26, clubs: [] },
     { points: 25, clubs: ["LEE"] },
     { points: 24, clubs: [] },
     { points: 23, clubs: [] },
