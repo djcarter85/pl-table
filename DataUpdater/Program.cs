@@ -10,4 +10,4 @@ var pointsTable = PointsTableGenerator.Generate(table);
 
 var json = JsonSerializer.Serialize(pointsTable, options: new() { WriteIndented = true });
 
-await File.WriteAllTextAsync(@"..\..\..\..\src\data.json", json);
+await GitHubWriter.WriteAsync(relativeFilePath: "src/data.json", fileContents: json, branchName: "main");
