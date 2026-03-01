@@ -10,4 +10,4 @@ var pointsTable = PointsTableGenerator.Generate(table);
 
 var json = JsonSerializer.Serialize(pointsTable, options: new() { WriteIndented = true });
 
-Console.WriteLine(json);
+await File.WriteAllTextAsync(@"..\..\..\..\src\data.json", json);
