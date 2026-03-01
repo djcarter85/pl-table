@@ -49,7 +49,7 @@ const PointsRow = ({
 
 import data from "./data.json";
 
-function App() {
+const App = () => {
   return (
     <>
       <div className="mx-auto flex max-w-md flex-col gap-4 p-4">
@@ -65,6 +65,6 @@ function App() {
       </div>
     </>
   );
-}
+};
 
 export default App;
