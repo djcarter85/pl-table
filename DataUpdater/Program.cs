@@ -1,4 +1,5 @@
-﻿using System.Text.Json;
+﻿using System.Globalization;
+using System.Text.Json;
 using DataUpdater;
 using NodaTime;
 
@@ -11,7 +12,13 @@ var table = TableGenerator.Generate(fplMatches, fplTeams);
 
 var pointsTable = PointsTableGenerator.Generate(table);
 
-var json = JsonSerializer.Serialize(pointsTable, options: new() { WriteIndented = true });
+var data = new Data
+{
+    LastUpdated = now.ToString("yyyy-MM-ddTHH:mm'Z'", CultureInfo.InvariantCulture), 
+    Table = pointsTable
+};
+
+var json = JsonSerializer.Serialize(data, options: new() { WriteIndented = true });
 
 await GitHubWriter.WriteAsync(
     relativeFilePath: "src/data.json", fileContents: json, branchName: "main", now: now);
