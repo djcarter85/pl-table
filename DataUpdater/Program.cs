@@ -6,6 +6,8 @@ var fplTeams = await FplApiClient.GetTeams();
 
 var table = TableGenerator.Generate(fplMatches, fplTeams);
 
-var json = JsonSerializer.Serialize(table, options: new() { WriteIndented = true });
+var pointsTable = PointsTableGenerator.Generate(table);
+
+var json = JsonSerializer.Serialize(pointsTable, options: new() { WriteIndented = true });
 
 Console.WriteLine(json);
