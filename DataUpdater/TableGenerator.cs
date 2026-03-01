@@ -2,7 +2,7 @@
 
 public static class TableGenerator
 {
-    public static IReadOnlyList<TableEntry> Generate(IReadOnlyList<FplMatch> matches)
+    public static IReadOnlyList<TableEntry> Generate(IReadOnlyList<FplMatch> matches, IReadOnlyList<FplTeam> fplTeams)
     {
         var teamMatchOutcomes = matches.SelectMany(CreateOutcomes);
 
@@ -10,7 +10,7 @@ public static class TableGenerator
             .GroupBy(tmo => tmo.TeamId)
             .Select(g => 
                 new TableEntry(
-                    TeamId: g.Key,
+                    TeamShortName: GetTeamShortName(g.Key, fplTeams),
                     Points: g.Sum(tmo => tmo.Points),
                     For: g.Sum(tmo => tmo.For),
                     Against: g.Sum(tmo => tmo.Against)))
@@ -20,6 +20,9 @@ public static class TableGenerator
             .ThenBy(te => te.TeamShortName)
             .ToList();
     }
+
+    private static string GetTeamShortName(int teamId, IReadOnlyList<FplTeam> fplTeams) => 
+        fplTeams.Single(t => t.Id == teamId).ShortName;
 
     private static IEnumerable<TeamMatchOutcome> CreateOutcomes(FplMatch fplMatch)
     {
