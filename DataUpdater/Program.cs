@@ -1,5 +1,8 @@
 ﻿using System.Text.Json;
 using DataUpdater;
+using NodaTime;
+
+var now = SystemClock.Instance.GetCurrentInstant();
 
 var fplMatches = await FplApiClient.GetMatches();
 var fplTeams = await FplApiClient.GetTeams();
@@ -10,4 +13,5 @@ var pointsTable = PointsTableGenerator.Generate(table);
 
 var json = JsonSerializer.Serialize(pointsTable, options: new() { WriteIndented = true });
 
-await GitHubWriter.WriteAsync(relativeFilePath: "src/data.json", fileContents: json, branchName: "main");
+await GitHubWriter.WriteAsync(
+    relativeFilePath: "src/data.json", fileContents: json, branchName: "main", now: now);

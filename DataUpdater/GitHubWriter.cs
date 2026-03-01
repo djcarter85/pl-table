@@ -5,7 +5,7 @@ using Octokit;
 
 public static class GitHubWriter
 {
-    public static async Task WriteAsync(string relativeFilePath, string fileContents, string branchName)
+    public static async Task WriteAsync(string relativeFilePath, string fileContents, string branchName, Instant now)
     {
         var token = Environment.GetEnvironmentVariable("GITHUB_TOKEN")
                     ?? throw new InvalidOperationException("GITHUB_TOKEN not set.");
@@ -28,7 +28,7 @@ public static class GitHubWriter
             return;
         }
 
-        await UpdateOrCreateFileAsync(gitHubClient, repo, relativeFilePath, fileContents, branchName, existingFile?.Sha);
+        await UpdateOrCreateFileAsync(gitHubClient, repo, relativeFilePath, fileContents, branchName, existingFile?.Sha, now);
     }
 
     private static async Task UpdateOrCreateFileAsync(
@@ -37,10 +37,10 @@ public static class GitHubWriter
         string relativeFilePath, 
         string fileContents, 
         string branchName,
-        string? existingFileSha)
+        string? existingFileSha,
+        Instant now)
     {
-        var currentInstant = SystemClock.Instance.GetCurrentInstant();
-        var commitMessage = $"data: update {currentInstant:yyyy-MM-ddTHH:mm'Z'}";
+        var commitMessage = $"data: update {now:yyyy-MM-ddTHH:mm'Z'}";
 
         if (existingFileSha == null)
         {
