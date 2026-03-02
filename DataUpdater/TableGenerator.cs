@@ -11,6 +11,7 @@ public static class TableGenerator
             .Select(g => 
                 new TableEntry(
                     TeamShortName: GetTeamShortName(g.Key, fplTeams),
+                    Played: g.Count(),
                     Points: g.Sum(tmo => tmo.Points),
                     For: g.Sum(tmo => tmo.For),
                     Against: g.Sum(tmo => tmo.Against)))
