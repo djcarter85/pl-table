@@ -32,6 +32,10 @@ const HeaderRow = () => {
   );
 };
 
+const Club = ({ name }: { name: string }) => {
+  return <span>{name}</span>;
+};
+
 const PointsRow = ({
   points,
   clubs,
@@ -44,7 +48,7 @@ const PointsRow = ({
       <div className="text-right">{points}</div>
       <div className="flex flex-row gap-4">
         {clubs.map((c) => (
-          <span>{c.name}</span>
+          <Club name={c.name} />
         ))}
       </div>
     </>
