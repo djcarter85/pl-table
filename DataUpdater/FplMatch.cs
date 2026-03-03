@@ -15,4 +15,7 @@ public class FplMatch
     
     [JsonPropertyName("team_a_score")]
     public int? TeamAScore { get; set; }
+
+    [JsonPropertyName("finished_provisional")]
+    public bool Finished { get; set; }
 }

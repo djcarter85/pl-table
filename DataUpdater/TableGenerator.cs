@@ -27,7 +27,7 @@ public static class TableGenerator
 
     private static IEnumerable<TeamMatchOutcome> CreateOutcomes(FplMatch fplMatch)
     {
-        if (!fplMatch.TeamHScore.HasValue || !fplMatch.TeamAScore.HasValue)
+        if (!fplMatch.Finished || !fplMatch.TeamHScore.HasValue || !fplMatch.TeamAScore.HasValue)
         {
             return [];
         }
