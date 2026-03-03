@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-03T20:44Z",
+  "lastUpdated": "2026-03-03T20:51Z",
   "table": [
     {
       "points": 64,
@@ -82,16 +82,16 @@
     },
     {
       "points": 49,
-      "clubs": [
-        {
-          "name": "LIV",
-          "matchesPlayedOffset": 1
-        }
-      ]
+      "clubs": []
     },
     {
       "points": 48,
-      "clubs": []
+      "clubs": [
+        {
+          "name": "LIV",
+          "matchesPlayedOffset": 0
+        }
+      ]
     },
     {
       "points": 47,
@@ -112,19 +112,14 @@
     },
     {
       "points": 44,
-      "clubs": [
-        {
-          "name": "BRE",
-          "matchesPlayedOffset": 1
-        }
-      ]
+      "clubs": []
     },
     {
       "points": 43,
       "clubs": [
         {
-          "name": "EVE",
-          "matchesPlayedOffset": 1
+          "name": "BRE",
+          "matchesPlayedOffset": 0
         }
       ]
     },
@@ -140,8 +135,8 @@
       "points": 40,
       "clubs": [
         {
-          "name": "BOU",
-          "matchesPlayedOffset": 1
+          "name": "EVE",
+          "matchesPlayedOffset": 0
         },
         {
           "name": "FUL",
@@ -151,22 +146,26 @@
     },
     {
       "points": 39,
-      "clubs": []
+      "clubs": [
+        {
+          "name": "BOU",
+          "matchesPlayedOffset": 0
+        }
+      ]
     },
     {
       "points": 38,
-      "clubs": [
-        {
-          "name": "SUN",
-          "matchesPlayedOffset": 1
-        }
-      ]
+      "clubs": []
     },
     {
       "points": 37,
       "clubs": [
         {
           "name": "BHA",
+          "matchesPlayedOffset": 0
+        },
+        {
+          "name": "SUN",
           "matchesPlayedOffset": 0
         }
       ]
@@ -199,16 +198,16 @@
     },
     {
       "points": 32,
-      "clubs": [
-        {
-          "name": "LEE",
-          "matchesPlayedOffset": 1
-        }
-      ]
+      "clubs": []
     },
     {
       "points": 31,
-      "clubs": []
+      "clubs": [
+        {
+          "name": "LEE",
+          "matchesPlayedOffset": 0
+        }
+      ]
     },
     {
       "points": 30,
@@ -274,7 +273,7 @@
       "clubs": [
         {
           "name": "BUR",
-          "matchesPlayedOffset": 1
+          "matchesPlayedOffset": 0
         }
       ]
     },
@@ -296,10 +295,14 @@
     },
     {
       "points": 14,
+      "clubs": []
+    },
+    {
+      "points": 13,
       "clubs": [
         {
           "name": "WOL",
-          "matchesPlayedOffset": 2
+          "matchesPlayedOffset": 1
         }
       ]
     }
