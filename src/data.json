@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-03T20:51Z",
+  "lastUpdated": "2026-03-03T21:34Z",
   "table": [
     {
       "points": 64,
@@ -112,14 +112,19 @@
     },
     {
       "points": 44,
-      "clubs": []
+      "clubs": [
+        {
+          "name": "BRE",
+          "matchesPlayedOffset": 1
+        }
+      ]
     },
     {
       "points": 43,
       "clubs": [
         {
-          "name": "BRE",
-          "matchesPlayedOffset": 0
+          "name": "EVE",
+          "matchesPlayedOffset": 1
         }
       ]
     },
@@ -135,8 +140,8 @@
       "points": 40,
       "clubs": [
         {
-          "name": "EVE",
-          "matchesPlayedOffset": 0
+          "name": "BOU",
+          "matchesPlayedOffset": 1
         },
         {
           "name": "FUL",
@@ -146,12 +151,7 @@
     },
     {
       "points": 39,
-      "clubs": [
-        {
-          "name": "BOU",
-          "matchesPlayedOffset": 0
-        }
-      ]
+      "clubs": []
     },
     {
       "points": 38,
@@ -273,7 +273,7 @@
       "clubs": [
         {
           "name": "BUR",
-          "matchesPlayedOffset": 0
+          "matchesPlayedOffset": 1
         }
       ]
     },
