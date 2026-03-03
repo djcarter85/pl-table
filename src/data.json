@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-03T22:37Z",
+  "lastUpdated": "2026-03-03T23:16Z",
   "table": [
     {
       "points": 64,
@@ -89,7 +89,7 @@
       "clubs": [
         {
           "name": "LIV",
-          "matchesPlayedOffset": 0
+          "matchesPlayedOffset": 1
         }
       ]
     },
@@ -287,22 +287,10 @@
     },
     {
       "points": 16,
-      "clubs": []
-    },
-    {
-      "points": 15,
-      "clubs": []
-    },
-    {
-      "points": 14,
-      "clubs": []
-    },
-    {
-      "points": 13,
       "clubs": [
         {
           "name": "WOL",
-          "matchesPlayedOffset": 1
+          "matchesPlayedOffset": 2
         }
       ]
     }
