@@ -38,12 +38,19 @@ const GamesIdentifier = ({
   matchesPlayedOffset: number;
 }) => {
   if (matchesPlayedOffset < 0) {
-    return <div className="size-2 rounded-full bg-green-600"></div>;
+    return (
+      <div className="text-xs font-bold text-green-600">
+        {matchesPlayedOffset}
+      </div>
+    );
   }
   if (matchesPlayedOffset > 0) {
-    return <div className="size-2 rounded-full bg-red-600"></div>;
+    return (
+      <div className="text-xs font-bold text-red-600">
+        +{matchesPlayedOffset}
+      </div>
+    );
   }
-  return <div className="size-2 rounded-full"></div>;
 };
 
 const Club = ({
@@ -54,7 +61,7 @@ const Club = ({
   matchesPlayedOffset: number;
 }) => {
   return (
-    <div className="flex flex-row items-center gap-1">
+    <div className="flex flex-row items-start gap-1">
       <div>{name}</div>
       <GamesIdentifier matchesPlayedOffset={matchesPlayedOffset} />
     </div>
