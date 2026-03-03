@@ -32,6 +32,20 @@ const HeaderRow = () => {
   );
 };
 
+const GamesIdentifier = ({
+  matchesPlayedOffset,
+}: {
+  matchesPlayedOffset: number;
+}) => {
+  if (matchesPlayedOffset < 0) {
+    return <div className="size-2 rounded-full bg-green-600"></div>;
+  }
+  if (matchesPlayedOffset > 0) {
+    return <div className="size-2 rounded-full bg-red-600"></div>;
+  }
+  return <div className="size-2 rounded-full"></div>;
+};
+
 const Club = ({
   name,
   matchesPlayedOffset,
@@ -39,19 +53,10 @@ const Club = ({
   name: string;
   matchesPlayedOffset: number;
 }) => {
-  const gamesInHand = matchesPlayedOffset < 0;
-  const extraGamesPlayed = matchesPlayedOffset > 0;
-
   return (
     <div className="flex flex-row items-center gap-1">
       <div>{name}</div>
-      <div
-        className={cx(
-          "size-2 rounded-full",
-          gamesInHand && "bg-green-600",
-          extraGamesPlayed && "bg-red-600",
-        )}
-      ></div>
+      <GamesIdentifier matchesPlayedOffset={matchesPlayedOffset} />
     </div>
   );
 };
@@ -76,7 +81,6 @@ const PointsRow = ({
 };
 
 import data from "./data.json";
-import cx from "classix";
 
 const App = () => {
   return (
