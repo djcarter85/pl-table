@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-03T21:34Z",
+  "lastUpdated": "2026-03-03T22:24Z",
   "table": [
     {
       "points": 64,
@@ -146,6 +146,10 @@
         {
           "name": "FUL",
           "matchesPlayedOffset": 0
+        },
+        {
+          "name": "SUN",
+          "matchesPlayedOffset": 1
         }
       ]
     },
@@ -162,10 +166,6 @@
       "clubs": [
         {
           "name": "BHA",
-          "matchesPlayedOffset": 0
-        },
-        {
-          "name": "SUN",
           "matchesPlayedOffset": 0
         }
       ]
@@ -205,7 +205,7 @@
       "clubs": [
         {
           "name": "LEE",
-          "matchesPlayedOffset": 0
+          "matchesPlayedOffset": 1
         }
       ]
     },
