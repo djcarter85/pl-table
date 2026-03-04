@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-04T22:03Z",
+  "lastUpdated": "2026-03-04T23:20Z",
   "table": [
     {
       "points": 67,
@@ -80,7 +80,7 @@
       "clubs": [
         {
           "name": "MUN",
-          "matchesPlayedOffset": -1
+          "matchesPlayedOffset": 0
         },
         {
           "name": "AVL",
@@ -166,7 +166,12 @@
     },
     {
       "points": 39,
-      "clubs": []
+      "clubs": [
+        {
+          "name": "NEW",
+          "matchesPlayedOffset": 0
+        }
+      ]
     },
     {
       "points": 38,
@@ -183,12 +188,7 @@
     },
     {
       "points": 36,
-      "clubs": [
-        {
-          "name": "NEW",
-          "matchesPlayedOffset": -1
-        }
-      ]
+      "clubs": []
     },
     {
       "points": 35,
