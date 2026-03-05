@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-04T23:20Z",
+  "lastUpdated": "2026-03-05T23:44Z",
   "table": [
     {
       "points": 67,
@@ -175,7 +175,12 @@
     },
     {
       "points": 38,
-      "clubs": []
+      "clubs": [
+        {
+          "name": "CRY",
+          "matchesPlayedOffset": 0
+        }
+      ]
     },
     {
       "points": 37,
@@ -192,12 +197,7 @@
     },
     {
       "points": 35,
-      "clubs": [
-        {
-          "name": "CRY",
-          "matchesPlayedOffset": -1
-        }
-      ]
+      "clubs": []
     },
     {
       "points": 34,
@@ -229,7 +229,7 @@
       "clubs": [
         {
           "name": "TOT",
-          "matchesPlayedOffset": -1
+          "matchesPlayedOffset": 0
         }
       ]
     },
