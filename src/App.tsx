@@ -29,7 +29,7 @@ const HeaderRow = () => {
   return (
     <>
       <div className="mb-1 text-right font-bold tracking-wider uppercase">
-        Points
+        PTS
       </div>
       <div className="mb-1 text-left font-bold tracking-wider uppercase">
         Clubs
@@ -98,7 +98,7 @@ const PointsRow = ({
   return (
     <>
       <div className="text-right tabular-nums">{points}</div>
-      <div className="flex flex-row gap-4">
+      <div className="flex flex-row gap-2">
         {clubs.map((c) => (
           <Club
             name={c.name}
@@ -112,6 +112,9 @@ const PointsRow = ({
 };
 
 const App = () => {
+  const rowCount = data.table.length;
+  const left = data.table.slice(0, Math.ceil(rowCount / 2));
+  const right = data.table.slice(Math.ceil(rowCount / 2));
   return (
     <>
       <div className="mx-auto flex max-w-md flex-col gap-2 p-4">
@@ -120,12 +123,20 @@ const App = () => {
           matchesPlayed={data.matchesPlayed}
           lastUpdated={DateTime.fromISO(data.lastUpdated)}
         />
+        <div className="grid grid-cols-[1fr_1fr]">
+          <div className="grid grid-cols-[auto_1fr] gap-x-3">
+            {/* <HeaderRow /> */}
+            {left.map((x) => (
+              <PointsRow points={x.points} clubs={x.clubs} />
+            ))}
+          </div>
 
-        <div className="grid grid-cols-[1fr_1fr] gap-x-5">
-          <HeaderRow />
-          {data.table.map((x) => (
-            <PointsRow points={x.points} clubs={x.clubs} />
-          ))}
+          <div className="grid grid-cols-[1fr_1fr] gap-x-3">
+            {/* <HeaderRow /> */}
+            {right.map((x) => (
+              <PointsRow points={x.points} clubs={x.clubs} />
+            ))}
+          </div>
         </div>
       </div>
     </>
