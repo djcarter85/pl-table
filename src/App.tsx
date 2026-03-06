@@ -96,7 +96,7 @@ const PointsRow = ({
 }) => {
   return (
     <>
-      <div className="text-right">{points}</div>
+      <div className="text-right tabular-nums">{points}</div>
       <div className="flex flex-row gap-4">
         {clubs.map((c) => (
           <Club
@@ -122,7 +122,7 @@ const App = () => {
           lastUpdated={DateTime.fromISO(data.lastUpdated)}
         />
 
-        <div className="grid grid-cols-[1fr_1fr] gap-x-5 font-mono">
+        <div className="grid grid-cols-[1fr_1fr] gap-x-5">
           <HeaderRow />
           {data.table.map((x) => (
             <PointsRow points={x.points} clubs={x.clubs} />
