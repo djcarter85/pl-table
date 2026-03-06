@@ -3,7 +3,7 @@ import cx from "classix";
 
 const Title = () => {
   return (
-    <h1 className="text-center text-5xl font-bold">Premier League Table</h1>
+    <h1 className="text-center text-3xl font-bold">Premier League Table</h1>
   );
 };
 
