@@ -7,16 +7,20 @@ const Title = () => {
   );
 };
 
-const LastUpdated = ({ lastUpdated }: { lastUpdated: DateTime }) => {
+const Details = ({
+  matchesPlayed,
+  lastUpdated,
+}: {
+  matchesPlayed: number;
+  lastUpdated: DateTime;
+}) => {
+  const lastUpdatedLocal = lastUpdated.toLocal();
   return (
-    <div className="flex flex-row items-baseline gap-3">
-      <div className="text-sm tracking-wide text-gray-700 uppercase">
-        Last updated
-      </div>
-      <div className="text-lg">
-        {lastUpdated.toLocal().toFormat("dd MMM yyyy HH:mm")}
-      </div>
-    </div>
+    <p>
+      After <span className="text-lg font-bold">{matchesPlayed}</span> matches,
+      on <span>{lastUpdatedLocal.toFormat("dd MMM yyyy")}</span> at{" "}
+      <span>{lastUpdatedLocal.toFormat("HH:mm")}</span>.
+    </p>
   );
 };
 
@@ -113,7 +117,10 @@ const App = () => {
     <>
       <div className="mx-auto flex max-w-md flex-col gap-4 p-4">
         <Title />
-        <LastUpdated lastUpdated={DateTime.fromISO(data.lastUpdated)} />
+        <Details
+          matchesPlayed={data.matchesPlayed}
+          lastUpdated={DateTime.fromISO(data.lastUpdated)}
+        />
 
         <div className="grid grid-cols-[1fr_1fr] gap-x-5 font-mono">
           <HeaderRow />
