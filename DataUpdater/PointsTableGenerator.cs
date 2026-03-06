@@ -4,6 +4,11 @@ public static class PointsTableGenerator
 {
     public static IEnumerable<PointsTableEntry> Generate(IReadOnlyList<TableEntry> table)
     {
+        return GenerateEntries(table);
+    }
+
+    private static IEnumerable<PointsTableEntry> GenerateEntries(IReadOnlyList<TableEntry> table)
+    {
         var matchesPlayed = Mode(table, te => te.Played);
 
         int? currentPoints = null;
