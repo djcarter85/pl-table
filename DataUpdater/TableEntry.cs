@@ -1,6 +1,19 @@
 ﻿namespace DataUpdater;
 
-public record TableEntry(string TeamShortName, int Played, int Points, int For, int Against)
+public record TableEntry(
+    int Position,
+    string TeamShortName,
+    int Played,
+    int Points,
+    int For,
+    int Against,
+    int GoalDifference)
 {
-    public int GoalDifference => this.For - this.Against;
+    public TableBracket? Bracket =>
+        this.Position switch
+        {
+            <= 5 => TableBracket.ChampionsLeague,
+            >= 18 => TableBracket.Relegation,
+            _ => null
+        };
 }

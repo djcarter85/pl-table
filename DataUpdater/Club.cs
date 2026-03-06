@@ -7,4 +7,7 @@ public class Club
 
     [JsonPropertyName("matchesPlayedOffset")]
     public int MatchesPlayedOffset { get; init; }
+
+    [JsonPropertyName("bracket")]
+    public string? Bracket { get; init; }
 }

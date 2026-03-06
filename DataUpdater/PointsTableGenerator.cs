@@ -26,7 +26,8 @@ public static class PointsTableGenerator
                 new Club
                 {
                     Name = tableEntry.TeamShortName,
-                    MatchesPlayedOffset = tableEntry.Played - matchesPlayed
+                    MatchesPlayedOffset = tableEntry.Played - matchesPlayed,
+                    Bracket = FormatBracket(tableEntry.Bracket)
                 });
         }
 
@@ -41,4 +42,12 @@ public static class PointsTableGenerator
             .First()
             .Key;
 
+    private static string? FormatBracket(TableBracket? bracket) =>
+        bracket switch
+        {
+            TableBracket.ChampionsLeague => "championsLeague",
+            TableBracket.Relegation => "relegation",
+            null => null,
+            _ => throw new ArgumentOutOfRangeException(nameof(bracket), bracket, null)
+        };
 }
