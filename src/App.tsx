@@ -27,10 +27,10 @@ const Details = ({
 const HeaderRow = () => {
   return (
     <>
-      <div className="font-title mb-2 text-right font-bold tracking-wider uppercase">
+      <div className="mb-2 text-right font-bold tracking-wider uppercase">
         Points
       </div>
-      <div className="font-title mb-2 text-left font-bold tracking-wider uppercase">
+      <div className="mb-2 text-left font-bold tracking-wider uppercase">
         Clubs
       </div>
     </>
