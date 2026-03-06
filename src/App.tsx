@@ -1,5 +1,6 @@
 import { DateTime } from "luxon";
 import cx from "classix";
+import data from "./data.json";
 
 const Title = () => {
   return (
@@ -109,8 +110,6 @@ const PointsRow = ({
     </>
   );
 };
-
-import data from "./data.json";
 
 const App = () => {
   return (
