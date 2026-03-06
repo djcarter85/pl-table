@@ -15,7 +15,7 @@ var pointsTable = PointsTableGenerator.Generate(table);
 var data = new Data
 {
     LastUpdated = now.ToString("yyyy-MM-ddTHH:mm'Z'", CultureInfo.InvariantCulture), 
-    Table = pointsTable
+    Table = pointsTable.Entries
 };
 
 var json = JsonSerializer.Serialize(data, options: new() { WriteIndented = true });

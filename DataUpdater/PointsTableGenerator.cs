@@ -2,9 +2,9 @@
 
 public static class PointsTableGenerator
 {
-    public static IEnumerable<PointsTableEntry> Generate(IReadOnlyList<TableEntry> table)
+    public static PointsTable Generate(IReadOnlyList<TableEntry> table)
     {
-        return GenerateEntries(table);
+        return new PointsTable { Entries = GenerateEntries(table) };
     }
 
     private static IEnumerable<PointsTableEntry> GenerateEntries(IReadOnlyList<TableEntry> table)
