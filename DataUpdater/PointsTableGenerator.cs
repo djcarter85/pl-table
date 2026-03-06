@@ -4,13 +4,12 @@ public static class PointsTableGenerator
 {
     public static PointsTable Generate(IReadOnlyList<TableEntry> table)
     {
-        return new PointsTable { Entries = GenerateEntries(table) };
+        var matchesPlayed = Mode(table, te => te.Played);
+        return new PointsTable { Entries = GenerateEntries(table, matchesPlayed) };
     }
 
-    private static IEnumerable<PointsTableEntry> GenerateEntries(IReadOnlyList<TableEntry> table)
+    private static IEnumerable<PointsTableEntry> GenerateEntries(IReadOnlyList<TableEntry> table, int matchesPlayed)
     {
-        var matchesPlayed = Mode(table, te => te.Played);
-
         int? currentPoints = null;
         var clubs = new List<Club>();
         foreach (var tableEntry in table)
