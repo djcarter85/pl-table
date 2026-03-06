@@ -5,7 +5,7 @@ public static class PointsTableGenerator
     public static PointsTable Generate(IReadOnlyList<TableEntry> table)
     {
         var matchesPlayed = Mode(table, te => te.Played);
-        return new PointsTable { Entries = GenerateEntries(table, matchesPlayed) };
+        return new PointsTable { Entries = GenerateEntries(table, matchesPlayed), MatchesPlayed = matchesPlayed };
     }
 
     private static IEnumerable<PointsTableEntry> GenerateEntries(IReadOnlyList<TableEntry> table, int matchesPlayed)

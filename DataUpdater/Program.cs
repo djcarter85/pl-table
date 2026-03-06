@@ -14,7 +14,8 @@ var pointsTable = PointsTableGenerator.Generate(table);
 
 var data = new Data
 {
-    LastUpdated = now.ToString("yyyy-MM-ddTHH:mm'Z'", CultureInfo.InvariantCulture), 
+    LastUpdated = now.ToString("yyyy-MM-ddTHH:mm'Z'", CultureInfo.InvariantCulture),
+    MatchesPlayed = pointsTable.MatchesPlayed,
     Table = pointsTable.Entries
 };
 
