@@ -1,4 +1,5 @@
 import { DateTime } from "luxon";
+import cx from "classix";
 
 const Title = () => {
   return (
@@ -56,13 +57,23 @@ const GamesIdentifier = ({
 const Club = ({
   name,
   matchesPlayedOffset,
+  bracket,
 }: {
   name: string;
   matchesPlayedOffset: number;
+  bracket: string | null;
 }) => {
   return (
     <div className="flex flex-row items-start gap-1">
-      <div>{name}</div>
+      <div
+        className={cx(
+          bracket && "underline decoration-2 underline-offset-2",
+          bracket === "championsLeague" && "decoration-sky-600",
+          bracket === "relegation" && "decoration-red-600",
+        )}
+      >
+        {name}
+      </div>
       <GamesIdentifier matchesPlayedOffset={matchesPlayedOffset} />
     </div>
   );
@@ -73,14 +84,22 @@ const PointsRow = ({
   clubs,
 }: {
   points: number;
-  clubs: { name: string; matchesPlayedOffset: number }[];
+  clubs: {
+    name: string;
+    matchesPlayedOffset: number;
+    bracket: string | null;
+  }[];
 }) => {
   return (
     <>
       <div className="text-right">{points}</div>
       <div className="flex flex-row gap-4">
         {clubs.map((c) => (
-          <Club name={c.name} matchesPlayedOffset={c.matchesPlayedOffset} />
+          <Club
+            name={c.name}
+            matchesPlayedOffset={c.matchesPlayedOffset}
+            bracket={c.bracket}
+          />
         ))}
       </div>
     </>
