@@ -27,10 +27,10 @@ const Details = ({
 const HeaderRow = () => {
   return (
     <>
-      <div className="mb-2 text-right font-bold tracking-wider uppercase">
+      <div className="mb-1 text-right font-bold tracking-wider uppercase">
         Points
       </div>
-      <div className="mb-2 text-left font-bold tracking-wider uppercase">
+      <div className="mb-1 text-left font-bold tracking-wider uppercase">
         Clubs
       </div>
     </>
@@ -115,7 +115,7 @@ import data from "./data.json";
 const App = () => {
   return (
     <>
-      <div className="mx-auto flex max-w-md flex-col gap-4 p-4">
+      <div className="mx-auto flex max-w-md flex-col gap-2 p-4">
         <Title />
         <Details
           matchesPlayed={data.matchesPlayed}
