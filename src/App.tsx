@@ -2,6 +2,17 @@ import { DateTime } from "luxon";
 import cx from "classix";
 import data from "./data.json";
 
+type ClubData = {
+  name: string;
+  matchesPlayedOffset: number;
+  bracket: string | null;
+};
+
+type TableEntry = {
+  points: number;
+  clubs: ClubData[];
+};
+
 const Title = () => {
   return (
     <h1 className="text-center text-3xl font-bold">Premier League Table</h1>
@@ -25,17 +36,30 @@ const Details = ({
   );
 };
 
-const HeaderRow = () => {
-  return (
-    <>
-      <div className="mb-1 text-right font-bold tracking-wider uppercase">
-        Points
-      </div>
-      <div className="mb-1 text-left font-bold tracking-wider uppercase">
-        Clubs
-      </div>
-    </>
-  );
+const HeaderRow = ({ mirrored }: { mirrored: boolean }) => {
+  if (!mirrored) {
+    return (
+      <>
+        <div className="mb-1 text-left font-bold tracking-wider uppercase">
+          Points
+        </div>
+        <div className="mb-1 text-right font-bold tracking-wider uppercase">
+          Clubs
+        </div>
+      </>
+    );
+  } else {
+    return (
+      <>
+        <div className="mb-1 text-right font-bold tracking-wider uppercase">
+          Clubs
+        </div>
+        <div className="mb-1 text-left font-bold tracking-wider uppercase">
+          Points
+        </div>
+      </>
+    );
+  }
 };
 
 const GamesIdentifier = ({
@@ -87,34 +111,63 @@ const Club = ({
 const PointsRow = ({
   points,
   clubs,
+  mirrored,
 }: {
   points: number;
-  clubs: {
-    name: string;
-    matchesPlayedOffset: number;
-    bracket: string | null;
-  }[];
+  clubs: ClubData[];
+  mirrored: boolean;
 }) => {
+  if (!mirrored) {
+    return (
+      <>
+        <div className="text-left tabular-nums">{points}</div>
+        <div className="flex flex-row gap-4">
+          {clubs.map((c) => (
+            <Club
+              name={c.name}
+              matchesPlayedOffset={c.matchesPlayedOffset}
+              bracket={c.bracket}
+            />
+          ))}
+        </div>
+      </>
+    );
+  } else {
+    return (
+      <>
+        <div className="flex flex-row gap-4">
+          {clubs.map((c) => (
+            <Club
+              name={c.name}
+              matchesPlayedOffset={c.matchesPlayedOffset}
+              bracket={c.bracket}
+            />
+          ))}
+        </div>
+        <div className="text-right tabular-nums">{points}</div>
+      </>
+    );
+  }
+};
+
+const TableHalf = ({ data, mirrored }: { data: TableEntry[], mirrored: boolean }) => {
   return (
-    <>
-      <div className="text-right tabular-nums">{points}</div>
-      <div className="flex flex-row gap-4">
-        {clubs.map((c) => (
-          <Club
-            name={c.name}
-            matchesPlayedOffset={c.matchesPlayedOffset}
-            bracket={c.bracket}
-          />
-        ))}
-      </div>
-    </>
+    <div className="grid grid-cols-[1fr_1fr] gap-x-5">
+      {/* <HeaderRow mirrored={mirrored} /> */}
+      {data.map((x) => (
+        <PointsRow points={x.points} clubs={x.clubs} mirrored={mirrored} />
+      ))}
+    </div>
   );
 };
 
 const App = () => {
+  const halfway = Math.ceil(data.table.length / 2);
+  const topHalf = data.table.slice(0, halfway);
+  const bottomHalf = data.table.slice(halfway);
   return (
     <>
-      <div className="mx-auto flex max-w-md flex-col gap-2 p-4">
+      <div className="mx-auto flex max-w-4xl flex-col gap-2 p-4">
         <Title />
         <Details
           matchesPlayed={data.matchesPlayed}
@@ -122,10 +175,8 @@ const App = () => {
         />
 
         <div className="grid grid-cols-[1fr_1fr] gap-x-5">
-          <HeaderRow />
-          {data.table.map((x) => (
-            <PointsRow points={x.points} clubs={x.clubs} />
-          ))}
+          <TableHalf data={topHalf} mirrored={false} />
+          <TableHalf data={bottomHalf} mirrored={true} />
         </div>
       </div>
     </>
