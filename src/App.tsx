@@ -121,7 +121,7 @@ const PointsRow = ({
     return (
       <>
         <div className="text-right tabular-nums">{points}</div>
-        <div className="flex flex-row gap-4 text-left">
+        <div className="flex flex-row justify-start gap-4">
           {clubs.map((c) => (
             <Club
               name={c.name}
@@ -135,7 +135,7 @@ const PointsRow = ({
   } else {
     return (
       <>
-        <div className="flex flex-row gap-4 text-right">
+        <div className="flex flex-row justify-end gap-4">
           {clubs.map((c) => (
             <Club
               name={c.name}
