@@ -120,8 +120,8 @@ const PointsRow = ({
   if (!mirrored) {
     return (
       <>
-        <div className="text-left tabular-nums">{points}</div>
-        <div className="flex flex-row gap-4">
+        <div className="text-right tabular-nums">{points}</div>
+        <div className="flex flex-row gap-4 text-left">
           {clubs.map((c) => (
             <Club
               name={c.name}
@@ -135,7 +135,7 @@ const PointsRow = ({
   } else {
     return (
       <>
-        <div className="flex flex-row gap-4">
+        <div className="flex flex-row gap-4 text-right">
           {clubs.map((c) => (
             <Club
               name={c.name}
@@ -150,9 +150,21 @@ const PointsRow = ({
   }
 };
 
-const TableHalf = ({ data, mirrored }: { data: TableEntry[], mirrored: boolean }) => {
+const TableHalf = ({
+  data,
+  mirrored,
+}: {
+  data: TableEntry[];
+  mirrored: boolean;
+}) => {
   return (
-    <div className="grid grid-cols-[1fr_1fr] gap-x-5">
+    <div
+      className={cx(
+        "grid gap-x-5",
+        mirrored && "grid-cols-[1fr_auto]",
+        !mirrored && "grid-cols-[auto_1fr]",
+      )}
+    >
       {/* <HeaderRow mirrored={mirrored} /> */}
       {data.map((x) => (
         <PointsRow points={x.points} clubs={x.clubs} mirrored={mirrored} />
@@ -174,7 +186,7 @@ const App = () => {
           lastUpdated={DateTime.fromISO(data.lastUpdated)}
         />
 
-        <div className="grid grid-cols-[1fr_1fr] gap-x-5">
+        <div className="grid grid-cols-[1fr_1fr] items-start gap-x-5">
           <TableHalf data={topHalf} mirrored={false} />
           <TableHalf data={bottomHalf} mirrored={true} />
         </div>
