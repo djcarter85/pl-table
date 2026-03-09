@@ -2,6 +2,12 @@ import { DateTime } from "luxon";
 import cx from "classix";
 import data from "./data.json";
 
+type ClubData = {
+  name: string;
+  matchesPlayedOffset: number;
+  bracket: string | null;
+};
+
 const Title = () => {
   return (
     <h1 className="text-center text-3xl font-bold">Premier League Table</h1>
@@ -89,11 +95,7 @@ const PointsRow = ({
   clubs,
 }: {
   points: number;
-  clubs: {
-    name: string;
-    matchesPlayedOffset: number;
-    bracket: string | null;
-  }[];
+  clubs: ClubData[];
 }) => {
   return (
     <>
