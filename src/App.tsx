@@ -31,19 +31,6 @@ const Details = ({
   );
 };
 
-const HeaderRow = () => {
-  return (
-    <>
-      <div className="mb-1 text-right font-bold tracking-wider uppercase">
-        Points
-      </div>
-      <div className="mb-1 text-left font-bold tracking-wider uppercase">
-        Clubs
-      </div>
-    </>
-  );
-};
-
 const GamesIdentifier = ({
   matchesPlayedOffset,
 }: {
@@ -124,7 +111,6 @@ const App = () => {
         />
 
         <div className="grid grid-cols-[1fr_1fr] gap-x-5">
-          <HeaderRow />
           {data.table.map((x) => (
             <PointsRow points={x.points} clubs={x.clubs} />
           ))}
