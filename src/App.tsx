@@ -36,32 +36,6 @@ const Details = ({
   );
 };
 
-const HeaderRow = ({ mirrored }: { mirrored: boolean }) => {
-  if (!mirrored) {
-    return (
-      <>
-        <div className="mb-1 text-left font-bold tracking-wider uppercase">
-          Points
-        </div>
-        <div className="mb-1 text-right font-bold tracking-wider uppercase">
-          Clubs
-        </div>
-      </>
-    );
-  } else {
-    return (
-      <>
-        <div className="mb-1 text-right font-bold tracking-wider uppercase">
-          Clubs
-        </div>
-        <div className="mb-1 text-left font-bold tracking-wider uppercase">
-          Points
-        </div>
-      </>
-    );
-  }
-};
-
 const GamesIdentifier = ({
   matchesPlayedOffset,
 }: {
@@ -165,7 +139,6 @@ const TableHalf = ({
         !mirrored && "grid-cols-[auto_1fr]",
       )}
     >
-      {/* <HeaderRow mirrored={mirrored} /> */}
       {data.map((x) => (
         <PointsRow points={x.points} clubs={x.clubs} mirrored={mirrored} />
       ))}
@@ -179,7 +152,7 @@ const App = () => {
   const bottomHalf = data.table.slice(halfway);
   return (
     <>
-      <div className="mx-auto flex max-w-4xl flex-col gap-2 p-4">
+      <div className="mx-auto flex max-w-lg flex-col gap-2 p-4">
         <Title />
         <Details
           matchesPlayed={data.matchesPlayed}
