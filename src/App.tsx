@@ -8,6 +8,11 @@ type ClubData = {
   bracket: string | null;
 };
 
+type TableEntry = {
+  points: number;
+  clubs: ClubData[];
+};
+
 const Title = () => {
   return (
     <h1 className="text-center text-3xl font-bold">Premier League Table</h1>
@@ -100,6 +105,16 @@ const PointsRow = ({
   );
 };
 
+const Table = ({ table }: { table: TableEntry[] }) => {
+  return (
+    <div className="grid grid-cols-[1fr_1fr] gap-x-5">
+      {table.map((x) => (
+        <PointsRow points={x.points} clubs={x.clubs} />
+      ))}
+    </div>
+  );
+};
+
 const App = () => {
   return (
     <>
@@ -110,11 +125,7 @@ const App = () => {
           lastUpdated={DateTime.fromISO(data.lastUpdated)}
         />
 
-        <div className="grid grid-cols-[1fr_1fr] gap-x-5">
-          {data.table.map((x) => (
-            <PointsRow points={x.points} clubs={x.clubs} />
-          ))}
-        </div>
+        <Table table={data.table} />
       </div>
     </>
   );
