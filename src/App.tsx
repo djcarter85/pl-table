@@ -115,6 +115,10 @@ const Table = ({ table }: { table: TableEntry[] }) => {
   );
 };
 
+const Body = ({ table }: { table: TableEntry[] }) => {
+  return <Table table={table} />;
+};
+
 const App = () => {
   return (
     <>
@@ -125,7 +129,7 @@ const App = () => {
           lastUpdated={DateTime.fromISO(data.lastUpdated)}
         />
 
-        <Table table={data.table} />
+        <Body table={data.table} />
       </div>
     </>
   );
