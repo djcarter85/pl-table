@@ -13,6 +13,8 @@ type TableEntry = {
   clubs: ClubData[];
 };
 
+type DisplayType = "single" | "twoUp";
+
 const Title = () => {
   return (
     <h1 className="text-center text-3xl font-bold">Premier League Table</h1>
@@ -115,8 +117,27 @@ const Table = ({ table }: { table: TableEntry[] }) => {
   );
 };
 
-const Body = ({ table }: { table: TableEntry[] }) => {
-  return <Table table={table} />;
+const Body = ({
+  table,
+  display,
+}: {
+  table: TableEntry[];
+  display: DisplayType;
+}) => {
+  if (display === "twoUp") {
+    const midpointIndex = Math.ceil(data.table.length / 2);
+    const tableTopHalf = data.table.slice(0, midpointIndex);
+    const tableBottomHalf = data.table.slice(midpointIndex);
+
+    return (
+      <div className="grid grid-cols-[1fr_1fr] items-start gap-x-5">
+        <Table table={tableTopHalf} />
+        <Table table={tableBottomHalf} />
+      </div>
+    );
+  } else {
+    return <Table table={table} />;
+  }
 };
 
 const App = () => {
@@ -129,7 +150,7 @@ const App = () => {
           lastUpdated={DateTime.fromISO(data.lastUpdated)}
         />
 
-        <Body table={data.table} />
+        <Body table={data.table} display="single" />
       </div>
     </>
   );
