@@ -1,6 +1,7 @@
 import { DateTime } from "luxon";
 import cx from "classix";
 import data from "./data.json";
+import { useState } from "react";
 
 type ClubData = {
   name: string;
@@ -140,7 +141,24 @@ const Body = ({
   }
 };
 
+const Button = ({ onClick, text }: { onClick: () => void; text: string }) => {
+  return (
+    <button
+      className="cursor-pointer rounded-md border-1 border-neutral-600 px-2 py-1 text-sm text-neutral-800 hover:bg-neutral-200"
+      onClick={onClick}
+    >
+      {text}
+    </button>
+  );
+};
+
 const App = () => {
+  const [display, setDisplay] = useState<DisplayType>("single");
+
+  const onButtonClick = () => {
+    setDisplay((prev) => (prev === "single" ? "twoUp" : "single"));
+  };
+
   return (
     <>
       <div className="mx-auto flex max-w-md flex-col gap-2 p-4">
@@ -150,7 +168,11 @@ const App = () => {
           lastUpdated={DateTime.fromISO(data.lastUpdated)}
         />
 
-        <Body table={data.table} display="single" />
+        <div className="flex flex-row justify-end">
+          <Button onClick={onButtonClick} text="Toggle display" />
+        </div>
+
+        <Body table={data.table} display={display} />
       </div>
     </>
   );
