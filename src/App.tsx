@@ -14,7 +14,7 @@ type TableEntry = {
   clubs: ClubData[];
 };
 
-type DisplayType = "single" | "twoUp";
+type DisplayType = "oneColumn" | "twoColumns";
 
 const Title = () => {
   return (
@@ -137,7 +137,7 @@ const Body = ({
   table: TableEntry[];
   display: DisplayType;
 }) => {
-  if (display === "twoUp") {
+  if (display === "twoColumns") {
     const midpointIndex = Math.ceil(data.table.length / 2);
     const tableTopHalf = data.table.slice(0, midpointIndex);
     const tableBottomHalf = data.table.slice(midpointIndex);
@@ -165,10 +165,10 @@ const Button = ({ onClick, text }: { onClick: () => void; text: string }) => {
 };
 
 const App = () => {
-  const [display, setDisplay] = useState<DisplayType>("single");
+  const [display, setDisplay] = useState<DisplayType>("oneColumn");
 
   const onButtonClick = () => {
-    setDisplay((prev) => (prev === "single" ? "twoUp" : "single"));
+    setDisplay((prev) => (prev === "oneColumn" ? "twoColumns" : "oneColumn"));
   };
 
   return (
