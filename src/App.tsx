@@ -46,18 +46,26 @@ const GamesIdentifier = ({
 }) => {
   if (matchesPlayedOffset < 0) {
     return (
-      <div className="text-xs font-bold text-green-600">
+      <span className="text-xs font-bold text-green-600">
         {matchesPlayedOffset}
-      </div>
+      </span>
     );
   }
   if (matchesPlayedOffset > 0) {
     return (
-      <div className="text-xs font-bold text-red-600">
+      <span className="text-xs font-bold text-red-600">
         +{matchesPlayedOffset}
-      </div>
+      </span>
     );
   }
+};
+
+const getBracketClassName = (bracket: string | null) => {
+  return cx(
+    bracket && "underline decoration-2 underline-offset-2",
+    bracket === "championsLeague" && "decoration-sky-600",
+    bracket === "relegation" && "decoration-red-600",
+  );
 };
 
 const Club = ({
@@ -71,15 +79,7 @@ const Club = ({
 }) => {
   return (
     <div className="flex flex-row items-start gap-1">
-      <div
-        className={cx(
-          bracket && "underline decoration-2 underline-offset-2",
-          bracket === "championsLeague" && "decoration-sky-600",
-          bracket === "relegation" && "decoration-red-600",
-        )}
-      >
-        {name}
-      </div>
+      <div className={getBracketClassName(bracket)}>{name}</div>
       <GamesIdentifier matchesPlayedOffset={matchesPlayedOffset} />
     </div>
   );
@@ -164,6 +164,21 @@ const Button = ({ onClick, text }: { onClick: () => void; text: string }) => {
   );
 };
 
+const Legend = () => {
+  return (
+    <div className="text-sm text-neutral-700">
+      This page shows the Premier League table ordered by points. If teams have
+      played more or fewer games than others, this is shown with{" "}
+      <GamesIdentifier matchesPlayedOffset={1} /> or{" "}
+      <GamesIdentifier matchesPlayedOffset={-1} />. Champions League places are
+      underlined in{" "}
+      <span className={getBracketClassName("championsLeague")}>blue</span>,
+      while relegation places are underlined in{" "}
+      <span className={getBracketClassName("relegation")}>red</span>.
+    </div>
+  );
+};
+
 const App = () => {
   const [display, setDisplay] = useState<DisplayType>("oneColumn");
 
@@ -188,6 +203,8 @@ const App = () => {
         </div>
 
         <Body table={data.table} display={display} />
+
+        <Legend />
       </div>
     </>
   );
