@@ -156,7 +156,7 @@ const Body = ({
 const Button = ({ onClick, text }: { onClick: () => void; text: string }) => {
   return (
     <button
-      className="cursor-pointer rounded-md bg-neutral-200 px-3 py-1 text-sm text-neutral-900 hover:bg-neutral-300"
+      className="cursor-pointer rounded-md bg-gray-200 px-3 py-1 text-sm text-gray-900 hover:bg-gray-300"
       onClick={onClick}
     >
       {text}
@@ -166,7 +166,7 @@ const Button = ({ onClick, text }: { onClick: () => void; text: string }) => {
 
 const Legend = () => {
   return (
-    <div className="text-sm text-neutral-700">
+    <div className="text-sm text-gray-700">
       This page shows the Premier League table ordered by points. If teams have
       played more or fewer games than others, this is shown with{" "}
       <GamesIdentifier matchesPlayedOffset={1} /> or{" "}
