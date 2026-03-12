@@ -156,7 +156,7 @@ const Body = ({
 const Button = ({ onClick, text }: { onClick: () => void; text: string }) => {
   return (
     <button
-      className="cursor-pointer rounded-md border-1 border-neutral-600 px-2 py-1 text-sm text-neutral-800 hover:bg-neutral-200"
+      className="cursor-pointer rounded-md bg-neutral-200 px-3 py-1 text-sm text-neutral-900 hover:bg-neutral-300"
       onClick={onClick}
     >
       {text}
