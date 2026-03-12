@@ -180,7 +180,7 @@ const Legend = () => {
 };
 
 const App = () => {
-  const [display, setDisplay] = useState<DisplayType>("oneColumn");
+  const [display, setDisplay] = useState<DisplayType>("twoColumns");
 
   const onButtonClick = () => {
     setDisplay((prev) => (prev === "oneColumn" ? "twoColumns" : "oneColumn"));
