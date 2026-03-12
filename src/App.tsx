@@ -108,9 +108,21 @@ const PointsRow = ({
   );
 };
 
-const Table = ({ table }: { table: TableEntry[] }) => {
+const Table = ({
+  table,
+  pointsColumnMode,
+}: {
+  table: TableEntry[];
+  pointsColumnMode: "halfWidth" | "minContent";
+}) => {
   return (
-    <div className="grid grid-cols-[1fr_1fr] gap-x-5">
+    <div
+      className={cx(
+        "grid gap-x-5",
+        pointsColumnMode === "halfWidth" && "grid-cols-[1fr_1fr]",
+        pointsColumnMode === "minContent" && "grid-cols-[auto_1fr]",
+      )}
+    >
       {table.map((x) => (
         <PointsRow points={x.points} clubs={x.clubs} />
       ))}
@@ -132,12 +144,12 @@ const Body = ({
 
     return (
       <div className="grid grid-cols-[1fr_1fr] items-start gap-x-5">
-        <Table table={tableTopHalf} />
-        <Table table={tableBottomHalf} />
+        <Table table={tableTopHalf} pointsColumnMode="minContent" />
+        <Table table={tableBottomHalf} pointsColumnMode="minContent" />
       </div>
     );
   } else {
-    return <Table table={table} />;
+    return <Table table={table} pointsColumnMode="halfWidth" />;
   }
 };
 
