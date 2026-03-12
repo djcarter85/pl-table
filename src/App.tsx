@@ -181,7 +181,10 @@ const App = () => {
         />
 
         <div className="flex flex-row justify-end">
-          <Button onClick={onButtonClick} text="Toggle display" />
+          <Button
+            onClick={onButtonClick}
+            text={display == "oneColumn" ? "One column" : "Two columns"}
+          />
         </div>
 
         <Body table={data.table} display={display} />
