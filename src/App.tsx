@@ -167,8 +167,8 @@ const Button = ({ onClick, text }: { onClick: () => void; text: string }) => {
 const Legend = () => {
   return (
     <div className="text-sm text-gray-700">
-      This page shows the Premier League table ordered by points. If teams have
-      played more or fewer games than others, this is shown with{" "}
+      This site shows the Premier League table ordered by points. If teams have
+      played a different number of games to others, this is shown with{" "}
       <GamesIdentifier matchesPlayedOffset={1} /> or{" "}
       <GamesIdentifier matchesPlayedOffset={-1} />. Champions League places are
       underlined in{" "}
