@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-14T19:48Z",
+  "lastUpdated": "2026-03-14T20:06Z",
   "matchesPlayed": 29,
   "table": [
     {
@@ -119,7 +119,7 @@
         {
           "name": "CHE",
           "matchesPlayedOffset": 1,
-          "bracket": "championsLeague"
+          "bracket": null
         },
         {
           "name": "LIV",
