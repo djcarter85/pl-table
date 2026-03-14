@@ -12,7 +12,7 @@ public record TableEntry(
     public TableBracket? Bracket =>
         this.Position switch
         {
-            <= 5 => TableBracket.ChampionsLeague,
+            <= 4 => TableBracket.ChampionsLeague,
             >= 18 => TableBracket.Relegation,
             _ => null
         };
