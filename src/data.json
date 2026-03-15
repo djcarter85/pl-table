@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-15T18:32Z",
+  "lastUpdated": "2026-03-15T20:13Z",
   "matchesPlayed": 30,
   "table": [
     {
@@ -112,7 +112,13 @@
     },
     {
       "points": 49,
-      "clubs": []
+      "clubs": [
+        {
+          "name": "LIV",
+          "matchesPlayedOffset": 0,
+          "bracket": null
+        }
+      ]
     },
     {
       "points": 48,
@@ -120,11 +126,6 @@
         {
           "name": "CHE",
           "matchesPlayedOffset": 0,
-          "bracket": null
-        },
-        {
-          "name": "LIV",
-          "matchesPlayedOffset": -1,
           "bracket": null
         }
       ]
@@ -251,16 +252,17 @@
     },
     {
       "points": 30,
-      "clubs": []
+      "clubs": [
+        {
+          "name": "TOT",
+          "matchesPlayedOffset": 0,
+          "bracket": null
+        }
+      ]
     },
     {
       "points": 29,
       "clubs": [
-        {
-          "name": "TOT",
-          "matchesPlayedOffset": -1,
-          "bracket": null
-        },
         {
           "name": "NFO",
           "matchesPlayedOffset": 0,
