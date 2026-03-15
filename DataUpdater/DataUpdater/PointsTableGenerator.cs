@@ -4,7 +4,7 @@ public static class PointsTableGenerator
 {
     public static PointsTable Generate(IReadOnlyList<TableEntry> table)
     {
-        var matchesPlayed = Mode(table, te => te.Played);
+        var matchesPlayed = ModeOrZero(table, te => te.Played);
         return new PointsTable { Entries = GenerateEntries(table, matchesPlayed), MatchesPlayed = matchesPlayed };
     }
 
@@ -35,16 +35,20 @@ public static class PointsTableGenerator
                 });
         }
 
-        yield return new PointsTableEntry { Points = currentPoints.Value, Clubs = clubs };
+        if (currentPoints.HasValue)
+        {
+            yield return new PointsTableEntry { Points = currentPoints.Value, Clubs = clubs };
+        }
     }
 
-    private static int Mode<T>(IEnumerable<T> source, Func<T, int> keySelector) =>
+    private static int ModeOrZero<T>(IEnumerable<T> source, Func<T, int> keySelector) =>
         source
             .GroupBy(keySelector)
             .OrderByDescending(g => g.Count())
             .ThenBy(g => g.Key)
-            .First()
-            .Key;
+            .FirstOrDefault()
+            ?.Key
+        ?? 0;
 
     private static string? FormatBracket(TableBracket? bracket) =>
         bracket switch
