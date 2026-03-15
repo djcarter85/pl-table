@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-14T23:17Z",
+  "lastUpdated": "2026-03-15T16:16Z",
   "matchesPlayed": 30,
   "table": [
     {
@@ -80,7 +80,13 @@
     },
     {
       "points": 54,
-      "clubs": []
+      "clubs": [
+        {
+          "name": "MUN",
+          "matchesPlayedOffset": 0,
+          "bracket": "championsLeague"
+        }
+      ]
     },
     {
       "points": 53,
@@ -94,13 +100,8 @@
       "points": 51,
       "clubs": [
         {
-          "name": "MUN",
-          "matchesPlayedOffset": -1,
-          "bracket": "championsLeague"
-        },
-        {
           "name": "AVL",
-          "matchesPlayedOffset": -1,
+          "matchesPlayedOffset": 0,
           "bracket": "championsLeague"
         }
       ]
@@ -177,6 +178,11 @@
           "name": "BOU",
           "matchesPlayedOffset": 0,
           "bracket": null
+        },
+        {
+          "name": "FUL",
+          "matchesPlayedOffset": 0,
+          "bracket": null
         }
       ]
     },
@@ -189,11 +195,6 @@
           "bracket": null
         },
         {
-          "name": "FUL",
-          "matchesPlayedOffset": -1,
-          "bracket": null
-        },
-        {
           "name": "SUN",
           "matchesPlayedOffset": 0,
           "bracket": null
@@ -202,17 +203,17 @@
     },
     {
       "points": 39,
-      "clubs": []
-    },
-    {
-      "points": 38,
       "clubs": [
         {
           "name": "CRY",
-          "matchesPlayedOffset": -1,
+          "matchesPlayedOffset": 0,
           "bracket": null
         }
       ]
+    },
+    {
+      "points": 38,
+      "clubs": []
     },
     {
       "points": 37,
@@ -236,17 +237,17 @@
     },
     {
       "points": 32,
-      "clubs": []
-    },
-    {
-      "points": 31,
       "clubs": [
         {
           "name": "LEE",
-          "matchesPlayedOffset": -1,
+          "matchesPlayedOffset": 0,
           "bracket": null
         }
       ]
+    },
+    {
+      "points": 31,
+      "clubs": []
     },
     {
       "points": 30,
@@ -261,21 +262,20 @@
           "bracket": null
         },
         {
-          "name": "WHU",
+          "name": "NFO",
           "matchesPlayedOffset": 0,
           "bracket": null
+        },
+        {
+          "name": "WHU",
+          "matchesPlayedOffset": 0,
+          "bracket": "relegation"
         }
       ]
     },
     {
       "points": 28,
-      "clubs": [
-        {
-          "name": "NFO",
-          "matchesPlayedOffset": -1,
-          "bracket": "relegation"
-        }
-      ]
+      "clubs": []
     },
     {
       "points": 27,
