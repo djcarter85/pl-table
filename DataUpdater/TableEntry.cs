@@ -4,10 +4,7 @@ public record TableEntry(
     int Position,
     string TeamShortName,
     int Played,
-    int Points,
-    int For,
-    int Against,
-    int GoalDifference)
+    int Points)
 {
     public TableBracket? Bracket =>
         this.Position switch

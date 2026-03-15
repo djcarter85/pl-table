@@ -51,9 +51,6 @@ public static class TableGenerator
                 Position: position,
                 TeamShortName: TeamShortName,
                 Played: Played,
-                Points: Points,
-                For: For,
-                Against: Against,
-                GoalDifference: GoalDifference);
+                Points: Points);
     }
 }
