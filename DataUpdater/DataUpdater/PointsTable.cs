@@ -1,4 +1,6 @@
-﻿public class PointsTable
+﻿namespace DataUpdater;
+
+public class PointsTable
 {
     public IEnumerable<PointsTableEntry> Entries { get; set; }
     

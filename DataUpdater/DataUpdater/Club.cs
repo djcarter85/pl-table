@@ -1,5 +1,7 @@
 ﻿using System.Text.Json.Serialization;
 
+namespace DataUpdater;
+
 public class Club
 {
     [JsonPropertyName("name")]

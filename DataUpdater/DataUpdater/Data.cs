@@ -1,5 +1,7 @@
 ﻿using System.Text.Json.Serialization;
 
+namespace DataUpdater;
+
 public class Data
 {
     [JsonPropertyName("lastUpdated")] 

@@ -1,4 +1,4 @@
-﻿using DataUpdater;
+﻿namespace DataUpdater;
 
 public static class PointsTableGenerator
 {
