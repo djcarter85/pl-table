@@ -23,4 +23,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
-        run: dotnet run --project DataUpdater
+        run: dotnet run --project DataUpdater/DataUpdater
