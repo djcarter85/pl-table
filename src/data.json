@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-15T23:19Z",
+  "lastUpdated": "2026-03-16T23:21Z",
   "matchesPlayed": 30,
   "table": [
     {
@@ -140,17 +140,17 @@
     },
     {
       "points": 45,
-      "clubs": []
-    },
-    {
-      "points": 44,
       "clubs": [
         {
           "name": "BRE",
-          "matchesPlayedOffset": -1,
+          "matchesPlayedOffset": 0,
           "bracket": null
         }
       ]
+    },
+    {
+      "points": 44,
+      "clubs": []
     },
     {
       "points": 43,
@@ -327,14 +327,10 @@
     },
     {
       "points": 17,
-      "clubs": []
-    },
-    {
-      "points": 16,
       "clubs": [
         {
           "name": "WOL",
-          "matchesPlayedOffset": 0,
+          "matchesPlayedOffset": 1,
           "bracket": "relegation"
         }
       ]
