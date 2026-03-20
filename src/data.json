@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-19T23:20Z",
+  "lastUpdated": "2026-03-20T23:19Z",
   "matchesPlayed": 30,
   "table": [
     {
@@ -76,17 +76,17 @@
     },
     {
       "points": 55,
-      "clubs": []
-    },
-    {
-      "points": 54,
       "clubs": [
         {
           "name": "MUN",
-          "matchesPlayedOffset": 0,
+          "matchesPlayedOffset": 1,
           "bracket": "championsLeague"
         }
       ]
+    },
+    {
+      "points": 54,
+      "clubs": []
     },
     {
       "points": 53,
@@ -169,17 +169,17 @@
           "name": "NEW",
           "matchesPlayedOffset": 0,
           "bracket": null
+        },
+        {
+          "name": "BOU",
+          "matchesPlayedOffset": 1,
+          "bracket": null
         }
       ]
     },
     {
       "points": 41,
       "clubs": [
-        {
-          "name": "BOU",
-          "matchesPlayedOffset": 0,
-          "bracket": null
-        },
         {
           "name": "FUL",
           "matchesPlayedOffset": 0,
