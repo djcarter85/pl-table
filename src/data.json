@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-03-20T23:19Z",
-  "matchesPlayed": 30,
+  "lastUpdated": "2026-03-21T23:15Z",
+  "matchesPlayed": 31,
   "table": [
     {
       "points": 70,
       "clubs": [
         {
           "name": "ARS",
-          "matchesPlayedOffset": 1,
+          "matchesPlayedOffset": 0,
           "bracket": "championsLeague"
         }
       ]
@@ -49,7 +49,7 @@
       "clubs": [
         {
           "name": "MCI",
-          "matchesPlayedOffset": 0,
+          "matchesPlayedOffset": -1,
           "bracket": "championsLeague"
         }
       ]
@@ -79,7 +79,7 @@
       "clubs": [
         {
           "name": "MUN",
-          "matchesPlayedOffset": 1,
+          "matchesPlayedOffset": 0,
           "bracket": "championsLeague"
         }
       ]
@@ -101,7 +101,7 @@
       "clubs": [
         {
           "name": "AVL",
-          "matchesPlayedOffset": 0,
+          "matchesPlayedOffset": -1,
           "bracket": "championsLeague"
         }
       ]
@@ -136,27 +136,38 @@
     },
     {
       "points": 46,
-      "clubs": []
-    },
-    {
-      "points": 45,
       "clubs": [
         {
           "name": "BRE",
+          "matchesPlayedOffset": 0,
+          "bracket": null
+        },
+        {
+          "name": "EVE",
           "matchesPlayedOffset": 0,
           "bracket": null
         }
       ]
     },
     {
-      "points": 44,
+      "points": 45,
       "clubs": []
+    },
+    {
+      "points": 44,
+      "clubs": [
+        {
+          "name": "FUL",
+          "matchesPlayedOffset": 0,
+          "bracket": null
+        }
+      ]
     },
     {
       "points": 43,
       "clubs": [
         {
-          "name": "EVE",
+          "name": "BHA",
           "matchesPlayedOffset": 0,
           "bracket": null
         }
@@ -167,37 +178,26 @@
       "clubs": [
         {
           "name": "NEW",
-          "matchesPlayedOffset": 0,
+          "matchesPlayedOffset": -1,
           "bracket": null
         },
         {
           "name": "BOU",
-          "matchesPlayedOffset": 1,
+          "matchesPlayedOffset": 0,
           "bracket": null
         }
       ]
     },
     {
       "points": 41,
-      "clubs": [
-        {
-          "name": "FUL",
-          "matchesPlayedOffset": 0,
-          "bracket": null
-        }
-      ]
+      "clubs": []
     },
     {
       "points": 40,
       "clubs": [
         {
-          "name": "BHA",
-          "matchesPlayedOffset": 0,
-          "bracket": null
-        },
-        {
           "name": "SUN",
-          "matchesPlayedOffset": 0,
+          "matchesPlayedOffset": -1,
           "bracket": null
         }
       ]
@@ -207,7 +207,7 @@
       "clubs": [
         {
           "name": "CRY",
-          "matchesPlayedOffset": 0,
+          "matchesPlayedOffset": -1,
           "bracket": null
         }
       ]
@@ -234,10 +234,6 @@
     },
     {
       "points": 33,
-      "clubs": []
-    },
-    {
-      "points": 32,
       "clubs": [
         {
           "name": "LEE",
@@ -245,6 +241,10 @@
           "bracket": null
         }
       ]
+    },
+    {
+      "points": 32,
+      "clubs": []
     },
     {
       "points": 31,
@@ -255,7 +255,7 @@
       "clubs": [
         {
           "name": "TOT",
-          "matchesPlayedOffset": 0,
+          "matchesPlayedOffset": -1,
           "bracket": null
         }
       ]
@@ -265,12 +265,12 @@
       "clubs": [
         {
           "name": "NFO",
-          "matchesPlayedOffset": 0,
+          "matchesPlayedOffset": -1,
           "bracket": null
         },
         {
           "name": "WHU",
-          "matchesPlayedOffset": 0,
+          "matchesPlayedOffset": -1,
           "bracket": "relegation"
         }
       ]
@@ -330,7 +330,7 @@
       "clubs": [
         {
           "name": "WOL",
-          "matchesPlayedOffset": 1,
+          "matchesPlayedOffset": 0,
           "bracket": "relegation"
         }
       ]
