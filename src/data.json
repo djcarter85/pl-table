@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-09T23:29Z",
+  "lastUpdated": "2026-04-10T23:06Z",
   "matchesPlayed": 31,
   "table": [
     {
@@ -248,6 +248,11 @@
           "name": "NFO",
           "matchesPlayedOffset": 0,
           "bracket": null
+        },
+        {
+          "name": "WHU",
+          "matchesPlayedOffset": 1,
+          "bracket": null
         }
       ]
     },
@@ -261,19 +266,13 @@
         {
           "name": "TOT",
           "matchesPlayedOffset": 0,
-          "bracket": null
+          "bracket": "relegation"
         }
       ]
     },
     {
       "points": 29,
-      "clubs": [
-        {
-          "name": "WHU",
-          "matchesPlayedOffset": 0,
-          "bracket": "relegation"
-        }
-      ]
+      "clubs": []
     },
     {
       "points": 28,
@@ -330,7 +329,7 @@
       "clubs": [
         {
           "name": "WOL",
-          "matchesPlayedOffset": 0,
+          "matchesPlayedOffset": 1,
           "bracket": "relegation"
         }
       ]
