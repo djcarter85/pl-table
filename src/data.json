@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-12T15:52Z",
+  "lastUpdated": "2026-04-12T23:24Z",
   "matchesPlayed": 32,
   "table": [
     {
@@ -34,7 +34,13 @@
     },
     {
       "points": 64,
-      "clubs": []
+      "clubs": [
+        {
+          "name": "MCI",
+          "matchesPlayedOffset": -1,
+          "bracket": "championsLeague"
+        }
+      ]
     },
     {
       "points": 63,
@@ -46,13 +52,7 @@
     },
     {
       "points": 61,
-      "clubs": [
-        {
-          "name": "MCI",
-          "matchesPlayedOffset": -2,
-          "bracket": "championsLeague"
-        }
-      ]
+      "clubs": []
     },
     {
       "points": 60,
@@ -124,7 +124,7 @@
       "clubs": [
         {
           "name": "CHE",
-          "matchesPlayedOffset": -1,
+          "matchesPlayedOffset": 0,
           "bracket": null
         }
       ]
