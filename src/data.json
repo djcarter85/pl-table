@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-12T23:24Z",
+  "lastUpdated": "2026-04-13T23:33Z",
   "matchesPlayed": 32,
   "table": [
     {
@@ -79,7 +79,7 @@
       "clubs": [
         {
           "name": "MUN",
-          "matchesPlayedOffset": -1,
+          "matchesPlayedOffset": 0,
           "bracket": "championsLeague"
         },
         {
@@ -220,7 +220,13 @@
     },
     {
       "points": 36,
-      "clubs": []
+      "clubs": [
+        {
+          "name": "LEE",
+          "matchesPlayedOffset": 0,
+          "bracket": null
+        }
+      ]
     },
     {
       "points": 35,
@@ -233,11 +239,6 @@
     {
       "points": 33,
       "clubs": [
-        {
-          "name": "LEE",
-          "matchesPlayedOffset": -1,
-          "bracket": null
-        },
         {
           "name": "NFO",
           "matchesPlayedOffset": 0,
