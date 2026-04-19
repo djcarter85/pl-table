@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-18T23:24Z",
+  "lastUpdated": "2026-04-19T15:17Z",
   "matchesPlayed": 33,
   "table": [
     {
@@ -69,6 +69,11 @@
           "name": "MUN",
           "matchesPlayedOffset": 0,
           "bracket": "championsLeague"
+        },
+        {
+          "name": "AVL",
+          "matchesPlayedOffset": 0,
+          "bracket": "championsLeague"
         }
       ]
     },
@@ -84,9 +89,9 @@
       "points": 55,
       "clubs": [
         {
-          "name": "AVL",
-          "matchesPlayedOffset": -1,
-          "bracket": "championsLeague"
+          "name": "LIV",
+          "matchesPlayedOffset": 0,
+          "bracket": null
         }
       ]
     },
@@ -100,13 +105,7 @@
     },
     {
       "points": 52,
-      "clubs": [
-        {
-          "name": "LIV",
-          "matchesPlayedOffset": -1,
-          "bracket": null
-        }
-      ]
+      "clubs": []
     },
     {
       "points": 51,
@@ -150,7 +149,7 @@
         },
         {
           "name": "EVE",
-          "matchesPlayedOffset": -1,
+          "matchesPlayedOffset": 0,
           "bracket": null
         }
       ]
@@ -160,7 +159,7 @@
       "clubs": [
         {
           "name": "SUN",
-          "matchesPlayedOffset": -1,
+          "matchesPlayedOffset": 0,
           "bracket": null
         }
       ]
@@ -226,7 +225,13 @@
     },
     {
       "points": 36,
-      "clubs": []
+      "clubs": [
+        {
+          "name": "NFO",
+          "matchesPlayedOffset": 0,
+          "bracket": null
+        }
+      ]
     },
     {
       "points": 35,
@@ -238,13 +243,7 @@
     },
     {
       "points": 33,
-      "clubs": [
-        {
-          "name": "NFO",
-          "matchesPlayedOffset": -1,
-          "bracket": null
-        }
-      ]
+      "clubs": []
     },
     {
       "points": 32,
@@ -311,7 +310,7 @@
       "clubs": [
         {
           "name": "BUR",
-          "matchesPlayedOffset": -1,
+          "matchesPlayedOffset": 0,
           "bracket": "relegation"
         }
       ]
