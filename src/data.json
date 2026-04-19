@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-19T15:17Z",
+  "lastUpdated": "2026-04-19T23:26Z",
   "matchesPlayed": 33,
   "table": [
     {
@@ -7,7 +7,7 @@
       "clubs": [
         {
           "name": "ARS",
-          "matchesPlayedOffset": -1,
+          "matchesPlayedOffset": 0,
           "bracket": "championsLeague"
         }
       ]
@@ -22,7 +22,13 @@
     },
     {
       "points": 67,
-      "clubs": []
+      "clubs": [
+        {
+          "name": "MCI",
+          "matchesPlayedOffset": -1,
+          "bracket": "championsLeague"
+        }
+      ]
     },
     {
       "points": 66,
@@ -34,13 +40,7 @@
     },
     {
       "points": 64,
-      "clubs": [
-        {
-          "name": "MCI",
-          "matchesPlayedOffset": -2,
-          "bracket": "championsLeague"
-        }
-      ]
+      "clubs": []
     },
     {
       "points": 63,
