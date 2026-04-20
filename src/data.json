@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-20T10:02Z",
+  "lastUpdated": "2026-04-20T23:33Z",
   "matchesPlayed": 33,
   "table": [
     {
@@ -180,16 +180,17 @@
     },
     {
       "points": 43,
-      "clubs": []
+      "clubs": [
+        {
+          "name": "CRY",
+          "matchesPlayedOffset": -1,
+          "bracket": null
+        }
+      ]
     },
     {
       "points": 42,
       "clubs": [
-        {
-          "name": "CRY",
-          "matchesPlayedOffset": -2,
-          "bracket": null
-        },
         {
           "name": "NEW",
           "matchesPlayedOffset": 0,
@@ -243,17 +244,17 @@
     },
     {
       "points": 33,
-      "clubs": []
-    },
-    {
-      "points": 32,
       "clubs": [
         {
           "name": "WHU",
-          "matchesPlayedOffset": -1,
+          "matchesPlayedOffset": 0,
           "bracket": null
         }
       ]
+    },
+    {
+      "points": 32,
+      "clubs": []
     },
     {
       "points": 31,
