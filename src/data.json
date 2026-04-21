@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-20T23:33Z",
+  "lastUpdated": "2026-04-21T23:26Z",
   "matchesPlayed": 33,
   "table": [
     {
@@ -113,7 +113,13 @@
     },
     {
       "points": 50,
-      "clubs": []
+      "clubs": [
+        {
+          "name": "BHA",
+          "matchesPlayedOffset": 1,
+          "bracket": null
+        }
+      ]
     },
     {
       "points": 49,
@@ -124,7 +130,7 @@
       "clubs": [
         {
           "name": "CHE",
-          "matchesPlayedOffset": 0,
+          "matchesPlayedOffset": 1,
           "bracket": null
         },
         {
@@ -142,11 +148,6 @@
     {
       "points": 47,
       "clubs": [
-        {
-          "name": "BHA",
-          "matchesPlayedOffset": 0,
-          "bracket": null
-        },
         {
           "name": "EVE",
           "matchesPlayedOffset": 0,
