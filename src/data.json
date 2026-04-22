@@ -1,10 +1,15 @@
 {
-  "lastUpdated": "2026-04-21T23:26Z",
+  "lastUpdated": "2026-04-22T23:37Z",
   "matchesPlayed": 33,
   "table": [
     {
       "points": 70,
       "clubs": [
+        {
+          "name": "MCI",
+          "matchesPlayedOffset": 0,
+          "bracket": "championsLeague"
+        },
         {
           "name": "ARS",
           "matchesPlayedOffset": 0,
@@ -22,13 +27,7 @@
     },
     {
       "points": 67,
-      "clubs": [
-        {
-          "name": "MCI",
-          "matchesPlayedOffset": -1,
-          "bracket": "championsLeague"
-        }
-      ]
+      "clubs": []
     },
     {
       "points": 66,
@@ -123,7 +122,13 @@
     },
     {
       "points": 49,
-      "clubs": []
+      "clubs": [
+        {
+          "name": "BOU",
+          "matchesPlayedOffset": 1,
+          "bracket": null
+        }
+      ]
     },
     {
       "points": 48,
@@ -135,11 +140,6 @@
         },
         {
           "name": "BRE",
-          "matchesPlayedOffset": 0,
-          "bracket": null
-        },
-        {
-          "name": "BOU",
           "matchesPlayedOffset": 0,
           "bracket": null
         }
@@ -205,17 +205,17 @@
     },
     {
       "points": 40,
-      "clubs": []
-    },
-    {
-      "points": 39,
       "clubs": [
         {
           "name": "LEE",
-          "matchesPlayedOffset": 0,
+          "matchesPlayedOffset": 1,
           "bracket": null
         }
       ]
+    },
+    {
+      "points": 39,
+      "clubs": []
     },
     {
       "points": 38,
@@ -312,7 +312,7 @@
       "clubs": [
         {
           "name": "BUR",
-          "matchesPlayedOffset": 0,
+          "matchesPlayedOffset": 1,
           "bracket": "relegation"
         }
       ]
