@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-23T23:35Z",
+  "lastUpdated": "2026-04-24T23:31Z",
   "matchesPlayed": 33,
   "table": [
     {
@@ -160,7 +160,7 @@
       "clubs": [
         {
           "name": "SUN",
-          "matchesPlayedOffset": 0,
+          "matchesPlayedOffset": 1,
           "bracket": null
         }
       ]
@@ -215,7 +215,13 @@
     },
     {
       "points": 39,
-      "clubs": []
+      "clubs": [
+        {
+          "name": "NFO",
+          "matchesPlayedOffset": 1,
+          "bracket": null
+        }
+      ]
     },
     {
       "points": 38,
@@ -227,13 +233,7 @@
     },
     {
       "points": 36,
-      "clubs": [
-        {
-          "name": "NFO",
-          "matchesPlayedOffset": 0,
-          "bracket": null
-        }
-      ]
+      "clubs": []
     },
     {
       "points": 35,
