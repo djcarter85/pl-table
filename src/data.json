@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-30T23:41Z",
+  "lastUpdated": "2026-05-01T23:41Z",
   "matchesPlayed": 34,
   "table": [
     {
@@ -198,6 +198,11 @@
           "name": "CRY",
           "matchesPlayedOffset": -1,
           "bracket": null
+        },
+        {
+          "name": "LEE",
+          "matchesPlayedOffset": 1,
+          "bracket": null
         }
       ]
     },
@@ -217,13 +222,7 @@
     },
     {
       "points": 40,
-      "clubs": [
-        {
-          "name": "LEE",
-          "matchesPlayedOffset": 0,
-          "bracket": null
-        }
-      ]
+      "clubs": []
     },
     {
       "points": 39,
@@ -324,7 +323,7 @@
       "clubs": [
         {
           "name": "BUR",
-          "matchesPlayedOffset": 0,
+          "matchesPlayedOffset": 1,
           "bracket": "relegation"
         }
       ]
