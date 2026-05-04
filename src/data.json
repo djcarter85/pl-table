@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-03T23:34Z",
+  "lastUpdated": "2026-05-04T21:21Z",
   "matchesPlayed": 35,
   "table": [
     {
@@ -30,17 +30,17 @@
     },
     {
       "points": 71,
-      "clubs": []
-    },
-    {
-      "points": 70,
       "clubs": [
         {
           "name": "MCI",
-          "matchesPlayedOffset": -2,
+          "matchesPlayedOffset": -1,
           "bracket": "championsLeague"
         }
       ]
+    },
+    {
+      "points": 70,
+      "clubs": []
     },
     {
       "points": 69,
@@ -166,7 +166,12 @@
       "clubs": [
         {
           "name": "CHE",
-          "matchesPlayedOffset": -1,
+          "matchesPlayedOffset": 0,
+          "bracket": null
+        },
+        {
+          "name": "EVE",
+          "matchesPlayedOffset": 0,
           "bracket": null
         },
         {
@@ -179,11 +184,6 @@
     {
       "points": 47,
       "clubs": [
-        {
-          "name": "EVE",
-          "matchesPlayedOffset": -1,
-          "bracket": null
-        },
         {
           "name": "SUN",
           "matchesPlayedOffset": 0,
@@ -226,7 +226,13 @@
     },
     {
       "points": 42,
-      "clubs": []
+      "clubs": [
+        {
+          "name": "NFO",
+          "matchesPlayedOffset": 0,
+          "bracket": null
+        }
+      ]
     },
     {
       "points": 41,
@@ -238,13 +244,7 @@
     },
     {
       "points": 39,
-      "clubs": [
-        {
-          "name": "NFO",
-          "matchesPlayedOffset": -1,
-          "bracket": null
-        }
-      ]
+      "clubs": []
     },
     {
       "points": 38,
