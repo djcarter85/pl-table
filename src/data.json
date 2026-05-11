@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-10T23:40Z",
+  "lastUpdated": "2026-05-11T23:45Z",
   "matchesPlayed": 36,
   "table": [
     {
@@ -221,6 +221,11 @@
       "points": 44,
       "clubs": [
         {
+          "name": "LEE",
+          "matchesPlayedOffset": 0,
+          "bracket": null
+        },
+        {
           "name": "CRY",
           "matchesPlayedOffset": -1,
           "bracket": null
@@ -233,11 +238,6 @@
         {
           "name": "NFO",
           "matchesPlayedOffset": 0,
-          "bracket": null
-        },
-        {
-          "name": "LEE",
-          "matchesPlayedOffset": -1,
           "bracket": null
         }
       ]
@@ -260,17 +260,17 @@
     },
     {
       "points": 38,
-      "clubs": []
-    },
-    {
-      "points": 37,
       "clubs": [
         {
           "name": "TOT",
-          "matchesPlayedOffset": -1,
+          "matchesPlayedOffset": 0,
           "bracket": null
         }
       ]
+    },
+    {
+      "points": 37,
+      "clubs": []
     },
     {
       "points": 36,
