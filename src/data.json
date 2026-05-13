@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-12T23:49Z",
+  "lastUpdated": "2026-05-13T23:48Z",
   "matchesPlayed": 36,
   "table": [
     {
@@ -18,7 +18,13 @@
     },
     {
       "points": 77,
-      "clubs": []
+      "clubs": [
+        {
+          "name": "MCI",
+          "matchesPlayedOffset": 0,
+          "bracket": "championsLeague"
+        }
+      ]
     },
     {
       "points": 76,
@@ -30,13 +36,7 @@
     },
     {
       "points": 74,
-      "clubs": [
-        {
-          "name": "MCI",
-          "matchesPlayedOffset": -1,
-          "bracket": "championsLeague"
-        }
-      ]
+      "clubs": []
     },
     {
       "points": 73,
@@ -227,7 +227,7 @@
         },
         {
           "name": "CRY",
-          "matchesPlayedOffset": -1,
+          "matchesPlayedOffset": 0,
           "bracket": null
         }
       ]
