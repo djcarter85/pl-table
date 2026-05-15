@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-14T23:44Z",
+  "lastUpdated": "2026-05-15T23:43Z",
   "matchesPlayed": 36,
   "table": [
     {
@@ -90,7 +90,13 @@
     },
     {
       "points": 62,
-      "clubs": []
+      "clubs": [
+        {
+          "name": "AVL",
+          "matchesPlayedOffset": 1,
+          "bracket": "championsLeague"
+        }
+      ]
     },
     {
       "points": 61,
@@ -105,12 +111,7 @@
       "clubs": [
         {
           "name": "LIV",
-          "matchesPlayedOffset": 0,
-          "bracket": "championsLeague"
-        },
-        {
-          "name": "AVL",
-          "matchesPlayedOffset": 0,
+          "matchesPlayedOffset": 1,
           "bracket": "championsLeague"
         }
       ]
