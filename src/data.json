@@ -1,16 +1,28 @@
 {
-  "lastUpdated": "2026-05-17T23:46Z",
+  "lastUpdated": "2026-05-18T23:55Z",
   "matchesPlayed": 37,
   "table": [
     {
-      "points": 79,
+      "points": 82,
       "clubs": [
         {
           "name": "ARS",
-          "matchesPlayedOffset": -1,
+          "matchesPlayedOffset": 0,
           "bracket": "championsLeague"
         }
       ]
+    },
+    {
+      "points": 81,
+      "clubs": []
+    },
+    {
+      "points": 80,
+      "clubs": []
+    },
+    {
+      "points": 79,
+      "clubs": []
     },
     {
       "points": 78,
@@ -344,7 +356,7 @@
       "clubs": [
         {
           "name": "BUR",
-          "matchesPlayedOffset": -1,
+          "matchesPlayedOffset": 0,
           "bracket": "relegation"
         }
       ]
