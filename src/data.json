@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-18T23:55Z",
+  "lastUpdated": "2026-05-19T23:53Z",
   "matchesPlayed": 37,
   "table": [
     {
@@ -26,17 +26,17 @@
     },
     {
       "points": 78,
-      "clubs": []
-    },
-    {
-      "points": 77,
       "clubs": [
         {
           "name": "MCI",
-          "matchesPlayedOffset": -1,
+          "matchesPlayedOffset": 0,
           "bracket": "championsLeague"
         }
       ]
+    },
+    {
+      "points": 77,
+      "clubs": []
     },
     {
       "points": 76,
@@ -138,17 +138,17 @@
     },
     {
       "points": 56,
-      "clubs": []
-    },
-    {
-      "points": 55,
       "clubs": [
         {
           "name": "BOU",
-          "matchesPlayedOffset": -1,
+          "matchesPlayedOffset": 0,
           "bracket": null
         }
       ]
+    },
+    {
+      "points": 55,
+      "clubs": []
     },
     {
       "points": 54,
@@ -167,6 +167,11 @@
     {
       "points": 52,
       "clubs": [
+        {
+          "name": "CHE",
+          "matchesPlayedOffset": 0,
+          "bracket": null
+        },
         {
           "name": "BRE",
           "matchesPlayedOffset": 0,
@@ -191,11 +196,6 @@
     {
       "points": 49,
       "clubs": [
-        {
-          "name": "CHE",
-          "matchesPlayedOffset": -1,
-          "bracket": null
-        },
         {
           "name": "NEW",
           "matchesPlayedOffset": 0,
@@ -276,7 +276,7 @@
       "clubs": [
         {
           "name": "TOT",
-          "matchesPlayedOffset": -1,
+          "matchesPlayedOffset": 0,
           "bracket": null
         }
       ]
