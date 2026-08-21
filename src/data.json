@@ -1,5 +1,34 @@
 {
-  "lastUpdated": "2026-08-20T23:15Z",
-  "matchesPlayed": 0,
-  "table": []
+  "lastUpdated": "2026-08-21T23:12Z",
+  "matchesPlayed": 1,
+  "table": [
+    {
+      "points": 3,
+      "clubs": [
+        {
+          "name": "ARS",
+          "matchesPlayedOffset": 0,
+          "bracket": "championsLeague"
+        }
+      ]
+    },
+    {
+      "points": 2,
+      "clubs": []
+    },
+    {
+      "points": 1,
+      "clubs": []
+    },
+    {
+      "points": 0,
+      "clubs": [
+        {
+          "name": "COV",
+          "matchesPlayedOffset": 0,
+          "bracket": "championsLeague"
+        }
+      ]
+    }
+  ]
 }
