@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-21T23:12Z",
+  "lastUpdated": "2026-08-22T23:10Z",
   "matchesPlayed": 1,
   "table": [
     {
@@ -9,6 +9,31 @@
           "name": "ARS",
           "matchesPlayedOffset": 0,
           "bracket": "championsLeague"
+        },
+        {
+          "name": "BRE",
+          "matchesPlayedOffset": 0,
+          "bracket": "championsLeague"
+        },
+        {
+          "name": "EVE",
+          "matchesPlayedOffset": 0,
+          "bracket": "championsLeague"
+        },
+        {
+          "name": "HUL",
+          "matchesPlayedOffset": 0,
+          "bracket": "championsLeague"
+        },
+        {
+          "name": "IPS",
+          "matchesPlayedOffset": 0,
+          "bracket": null
+        },
+        {
+          "name": "LEE",
+          "matchesPlayedOffset": 0,
+          "bracket": null
         }
       ]
     },
@@ -24,9 +49,34 @@
       "points": 0,
       "clubs": [
         {
+          "name": "SUN",
+          "matchesPlayedOffset": 0,
+          "bracket": null
+        },
+        {
+          "name": "NFO",
+          "matchesPlayedOffset": 0,
+          "bracket": null
+        },
+        {
+          "name": "CRY",
+          "matchesPlayedOffset": 0,
+          "bracket": null
+        },
+        {
+          "name": "MUN",
+          "matchesPlayedOffset": 0,
+          "bracket": null
+        },
+        {
           "name": "COV",
           "matchesPlayedOffset": 0,
-          "bracket": "championsLeague"
+          "bracket": null
+        },
+        {
+          "name": "TOT",
+          "matchesPlayedOffset": 0,
+          "bracket": null
         }
       ]
     }
