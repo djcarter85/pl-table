@@ -1,10 +1,15 @@
 {
-  "lastUpdated": "2026-08-22T23:10Z",
+  "lastUpdated": "2026-08-23T23:10Z",
   "matchesPlayed": 1,
   "table": [
     {
       "points": 3,
       "clubs": [
+        {
+          "name": "BHA",
+          "matchesPlayedOffset": 0,
+          "bracket": "championsLeague"
+        },
         {
           "name": "ARS",
           "matchesPlayedOffset": 0,
@@ -23,10 +28,15 @@
         {
           "name": "HUL",
           "matchesPlayedOffset": 0,
-          "bracket": "championsLeague"
+          "bracket": null
         },
         {
           "name": "IPS",
+          "matchesPlayedOffset": 0,
+          "bracket": null
+        },
+        {
+          "name": "MCI",
           "matchesPlayedOffset": 0,
           "bracket": null
         },
@@ -43,11 +53,27 @@
     },
     {
       "points": 1,
-      "clubs": []
+      "clubs": [
+        {
+          "name": "LIV",
+          "matchesPlayedOffset": 0,
+          "bracket": null
+        },
+        {
+          "name": "NEW",
+          "matchesPlayedOffset": 0,
+          "bracket": null
+        }
+      ]
     },
     {
       "points": 0,
       "clubs": [
+        {
+          "name": "BOU",
+          "matchesPlayedOffset": 0,
+          "bracket": null
+        },
         {
           "name": "SUN",
           "matchesPlayedOffset": 0,
@@ -77,6 +103,11 @@
           "name": "TOT",
           "matchesPlayedOffset": 0,
           "bracket": null
+        },
+        {
+          "name": "AVL",
+          "matchesPlayedOffset": 0,
+          "bracket": "relegation"
         }
       ]
     }
