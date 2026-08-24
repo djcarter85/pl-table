@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-23T23:10Z",
+  "lastUpdated": "2026-08-24T23:12Z",
   "matchesPlayed": 1,
   "table": [
     {
@@ -27,6 +27,11 @@
         },
         {
           "name": "HUL",
+          "matchesPlayedOffset": 0,
+          "bracket": null
+        },
+        {
+          "name": "CHE",
           "matchesPlayedOffset": 0,
           "bracket": null
         },
@@ -70,6 +75,11 @@
       "points": 0,
       "clubs": [
         {
+          "name": "FUL",
+          "matchesPlayedOffset": 0,
+          "bracket": null
+        },
+        {
           "name": "BOU",
           "matchesPlayedOffset": 0,
           "bracket": null
@@ -97,12 +107,12 @@
         {
           "name": "COV",
           "matchesPlayedOffset": 0,
-          "bracket": null
+          "bracket": "relegation"
         },
         {
           "name": "TOT",
           "matchesPlayedOffset": 0,
-          "bracket": null
+          "bracket": "relegation"
         },
         {
           "name": "AVL",
