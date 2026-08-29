@@ -1,7 +1,25 @@
 {
-  "lastUpdated": "2026-08-28T06:25Z",
+  "lastUpdated": "2026-08-29T03:56Z",
   "matchesPlayed": 1,
   "table": [
+    {
+      "points": 6,
+      "clubs": [
+        {
+          "name": "MCI",
+          "matchesPlayedOffset": 1,
+          "bracket": "championsLeague"
+        }
+      ]
+    },
+    {
+      "points": 5,
+      "clubs": []
+    },
+    {
+      "points": 4,
+      "clubs": []
+    },
     {
       "points": 3,
       "clubs": [
@@ -23,7 +41,7 @@
         {
           "name": "EVE",
           "matchesPlayedOffset": 0,
-          "bracket": "championsLeague"
+          "bracket": null
         },
         {
           "name": "HUL",
@@ -37,11 +55,6 @@
         },
         {
           "name": "IPS",
-          "matchesPlayedOffset": 0,
-          "bracket": null
-        },
-        {
-          "name": "MCI",
           "matchesPlayedOffset": 0,
           "bracket": null
         },
@@ -95,11 +108,6 @@
           "bracket": null
         },
         {
-          "name": "CRY",
-          "matchesPlayedOffset": 0,
-          "bracket": null
-        },
-        {
           "name": "MUN",
           "matchesPlayedOffset": 0,
           "bracket": null
@@ -107,7 +115,7 @@
         {
           "name": "COV",
           "matchesPlayedOffset": 0,
-          "bracket": "relegation"
+          "bracket": null
         },
         {
           "name": "TOT",
@@ -117,6 +125,11 @@
         {
           "name": "AVL",
           "matchesPlayedOffset": 0,
+          "bracket": "relegation"
+        },
+        {
+          "name": "CRY",
+          "matchesPlayedOffset": 1,
           "bracket": "relegation"
         }
       ]
