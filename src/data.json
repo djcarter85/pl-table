@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-31T00:58Z",
+  "lastUpdated": "2026-09-01T01:29Z",
   "matchesPlayed": 2,
   "table": [
     {
@@ -7,6 +7,11 @@
       "clubs": [
         {
           "name": "MCI",
+          "matchesPlayedOffset": 0,
+          "bracket": "championsLeague"
+        },
+        {
+          "name": "ARS",
           "matchesPlayedOffset": 0,
           "bracket": "championsLeague"
         },
@@ -32,7 +37,7 @@
         {
           "name": "BRE",
           "matchesPlayedOffset": 0,
-          "bracket": "championsLeague"
+          "bracket": null
         },
         {
           "name": "NEW",
@@ -57,11 +62,6 @@
         {
           "name": "BHA",
           "matchesPlayedOffset": 0,
-          "bracket": null
-        },
-        {
-          "name": "ARS",
-          "matchesPlayedOffset": -1,
           "bracket": null
         },
         {
@@ -115,17 +115,17 @@
           "bracket": null
         },
         {
-          "name": "AVL",
-          "matchesPlayedOffset": -1,
+          "name": "COV",
+          "matchesPlayedOffset": 0,
           "bracket": null
         },
         {
-          "name": "COV",
+          "name": "CRY",
           "matchesPlayedOffset": 0,
           "bracket": "relegation"
         },
         {
-          "name": "CRY",
+          "name": "AVL",
           "matchesPlayedOffset": 0,
           "bracket": "relegation"
         },
