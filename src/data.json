@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-04T00:30Z",
+  "lastUpdated": "2026-09-05T00:27Z",
   "matchesPlayed": 2,
   "table": [
     {
@@ -29,7 +29,13 @@
     },
     {
       "points": 5,
-      "clubs": []
+      "clubs": [
+        {
+          "name": "LIV",
+          "matchesPlayedOffset": 1,
+          "bracket": null
+        }
+      ]
     },
     {
       "points": 4,
@@ -76,20 +82,14 @@
         },
         {
           "name": "IPS",
-          "matchesPlayedOffset": 0,
+          "matchesPlayedOffset": 1,
           "bracket": null
         }
       ]
     },
     {
       "points": 2,
-      "clubs": [
-        {
-          "name": "LIV",
-          "matchesPlayedOffset": 0,
-          "bracket": null
-        }
-      ]
+      "clubs": []
     },
     {
       "points": 1,
