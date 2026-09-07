@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-06T00:21Z",
+  "lastUpdated": "2026-09-07T00:27Z",
   "matchesPlayed": 3,
   "table": [
     {
@@ -7,6 +7,11 @@
       "clubs": [
         {
           "name": "MCI",
+          "matchesPlayedOffset": 0,
+          "bracket": "championsLeague"
+        },
+        {
+          "name": "ARS",
           "matchesPlayedOffset": 0,
           "bracket": "championsLeague"
         }
@@ -30,13 +35,8 @@
       "points": 6,
       "clubs": [
         {
-          "name": "ARS",
-          "matchesPlayedOffset": -1,
-          "bracket": "championsLeague"
-        },
-        {
           "name": "CHE",
-          "matchesPlayedOffset": -1,
+          "matchesPlayedOffset": 0,
           "bracket": "championsLeague"
         }
       ]
@@ -60,6 +60,11 @@
           "bracket": null
         },
         {
+          "name": "EVE",
+          "matchesPlayedOffset": 0,
+          "bracket": null
+        },
+        {
           "name": "LEE",
           "matchesPlayedOffset": 0,
           "bracket": null
@@ -75,8 +80,8 @@
           "bracket": null
         },
         {
-          "name": "EVE",
-          "matchesPlayedOffset": -1,
+          "name": "MUN",
+          "matchesPlayedOffset": 0,
           "bracket": null
         },
         {
@@ -89,11 +94,6 @@
     {
       "points": 3,
       "clubs": [
-        {
-          "name": "MUN",
-          "matchesPlayedOffset": -1,
-          "bracket": null
-        },
         {
           "name": "CRY",
           "matchesPlayedOffset": 0,
