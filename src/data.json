@@ -1,15 +1,10 @@
 {
-  "lastUpdated": "2026-09-12T00:45Z",
-  "matchesPlayed": 3,
+  "lastUpdated": "2026-09-13T00:29Z",
+  "matchesPlayed": 4,
   "table": [
     {
-      "points": 9,
+      "points": 12,
       "clubs": [
-        {
-          "name": "MCI",
-          "matchesPlayedOffset": 0,
-          "bracket": "championsLeague"
-        },
         {
           "name": "ARS",
           "matchesPlayedOffset": 0,
@@ -18,11 +13,25 @@
       ]
     },
     {
-      "points": 8,
+      "points": 11,
       "clubs": []
     },
     {
-      "points": 7,
+      "points": 10,
+      "clubs": []
+    },
+    {
+      "points": 9,
+      "clubs": [
+        {
+          "name": "MCI",
+          "matchesPlayedOffset": -1,
+          "bracket": "championsLeague"
+        }
+      ]
+    },
+    {
+      "points": 8,
       "clubs": [
         {
           "name": "HUL",
@@ -32,7 +41,7 @@
       ]
     },
     {
-      "points": 6,
+      "points": 7,
       "clubs": [
         {
           "name": "CHE",
@@ -42,7 +51,7 @@
       ]
     },
     {
-      "points": 5,
+      "points": 6,
       "clubs": [
         {
           "name": "BRE",
@@ -55,17 +64,32 @@
           "bracket": null
         },
         {
-          "name": "NEW",
-          "matchesPlayedOffset": 0,
-          "bracket": null
-        },
-        {
           "name": "EVE",
           "matchesPlayedOffset": 0,
           "bracket": null
         },
         {
+          "name": "IPS",
+          "matchesPlayedOffset": 0,
+          "bracket": null
+        }
+      ]
+    },
+    {
+      "points": 5,
+      "clubs": [
+        {
+          "name": "NEW",
+          "matchesPlayedOffset": -1,
+          "bracket": null
+        },
+        {
           "name": "LEE",
+          "matchesPlayedOffset": -1,
+          "bracket": null
+        },
+        {
+          "name": "NFO",
           "matchesPlayedOffset": 0,
           "bracket": null
         }
@@ -76,12 +100,12 @@
       "clubs": [
         {
           "name": "BHA",
-          "matchesPlayedOffset": 0,
+          "matchesPlayedOffset": -1,
           "bracket": null
         },
         {
           "name": "MUN",
-          "matchesPlayedOffset": 0,
+          "matchesPlayedOffset": -1,
           "bracket": null
         },
         {
@@ -95,12 +119,12 @@
       "points": 3,
       "clubs": [
         {
-          "name": "CRY",
+          "name": "BOU",
           "matchesPlayedOffset": 0,
           "bracket": null
         },
         {
-          "name": "IPS",
+          "name": "CRY",
           "matchesPlayedOffset": 0,
           "bracket": null
         }
@@ -110,12 +134,7 @@
       "points": 2,
       "clubs": [
         {
-          "name": "BOU",
-          "matchesPlayedOffset": 0,
-          "bracket": null
-        },
-        {
-          "name": "NFO",
+          "name": "TOT",
           "matchesPlayedOffset": 0,
           "bracket": null
         }
@@ -125,12 +144,12 @@
       "points": 1,
       "clubs": [
         {
-          "name": "AVL",
+          "name": "FUL",
           "matchesPlayedOffset": 0,
-          "bracket": null
+          "bracket": "relegation"
         },
         {
-          "name": "TOT",
+          "name": "AVL",
           "matchesPlayedOffset": 0,
           "bracket": "relegation"
         }
@@ -140,13 +159,8 @@
       "points": 0,
       "clubs": [
         {
-          "name": "FUL",
-          "matchesPlayedOffset": 0,
-          "bracket": "relegation"
-        },
-        {
           "name": "COV",
-          "matchesPlayedOffset": 0,
+          "matchesPlayedOffset": -1,
           "bracket": "relegation"
         }
       ]
