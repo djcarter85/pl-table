@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-14T00:31Z",
+  "lastUpdated": "2026-09-15T01:03Z",
   "matchesPlayed": 4,
   "table": [
     {
@@ -33,6 +33,11 @@
       "points": 8,
       "clubs": [
         {
+          "name": "LEE",
+          "matchesPlayedOffset": 0,
+          "bracket": "championsLeague"
+        },
+        {
           "name": "HUL",
           "matchesPlayedOffset": 0,
           "bracket": "championsLeague"
@@ -45,7 +50,7 @@
         {
           "name": "BHA",
           "matchesPlayedOffset": 0,
-          "bracket": "championsLeague"
+          "bracket": null
         },
         {
           "name": "CHE",
@@ -83,17 +88,12 @@
       "points": 5,
       "clubs": [
         {
-          "name": "NEW",
-          "matchesPlayedOffset": -1,
-          "bracket": null
-        },
-        {
-          "name": "LEE",
-          "matchesPlayedOffset": -1,
-          "bracket": null
-        },
-        {
           "name": "NFO",
+          "matchesPlayedOffset": 0,
+          "bracket": null
+        },
+        {
+          "name": "NEW",
           "matchesPlayedOffset": 0,
           "bracket": null
         }
