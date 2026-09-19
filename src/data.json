@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-18T00:52Z",
+  "lastUpdated": "2026-09-19T00:45Z",
   "matchesPlayed": 4,
   "table": [
     {
@@ -27,7 +27,13 @@
     },
     {
       "points": 9,
-      "clubs": []
+      "clubs": [
+        {
+          "name": "BRE",
+          "matchesPlayedOffset": 1,
+          "bracket": "championsLeague"
+        }
+      ]
     },
     {
       "points": 8,
@@ -40,7 +46,7 @@
         {
           "name": "HUL",
           "matchesPlayedOffset": 0,
-          "bracket": "championsLeague"
+          "bracket": null
         }
       ]
     },
@@ -54,7 +60,7 @@
         },
         {
           "name": "CHE",
-          "matchesPlayedOffset": 0,
+          "matchesPlayedOffset": 1,
           "bracket": null
         }
       ]
@@ -62,11 +68,6 @@
     {
       "points": 6,
       "clubs": [
-        {
-          "name": "BRE",
-          "matchesPlayedOffset": 0,
-          "bracket": null
-        },
         {
           "name": "LIV",
           "matchesPlayedOffset": 0,
