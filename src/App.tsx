@@ -168,7 +168,7 @@ const Legend = () => {
   return (
     <div className="text-sm text-gray-700">
       This page shows the points for each team in the Premier League. Teams
-      having played a different number of games are shown with{" "}
+      having played a different number of matches are shown with{" "}
       <GamesIdentifier matchesPlayedOffset={1} /> or{" "}
       <GamesIdentifier matchesPlayedOffset={-1} />. Champions League places are
       underlined in{" "}
