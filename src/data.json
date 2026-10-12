@@ -1,15 +1,28 @@
 {
-  "lastUpdated": "2026-10-11T01:24Z",
+  "lastUpdated": "2026-10-12T01:53Z",
   "matchesPlayed": 6,
   "table": [
     {
-      "points": 15,
+      "points": 18,
       "clubs": [
         {
           "name": "MCI",
-          "matchesPlayedOffset": -1,
+          "matchesPlayedOffset": 0,
           "bracket": "championsLeague"
-        },
+        }
+      ]
+    },
+    {
+      "points": 17,
+      "clubs": []
+    },
+    {
+      "points": 16,
+      "clubs": []
+    },
+    {
+      "points": 15,
+      "clubs": [
         {
           "name": "ARS",
           "matchesPlayedOffset": 0,
@@ -48,6 +61,11 @@
           "bracket": "championsLeague"
         },
         {
+          "name": "EVE",
+          "matchesPlayedOffset": 0,
+          "bracket": null
+        },
+        {
           "name": "CHE",
           "matchesPlayedOffset": 0,
           "bracket": null
@@ -63,13 +81,13 @@
           "bracket": null
         },
         {
-          "name": "LIV",
-          "matchesPlayedOffset": -1,
+          "name": "HUL",
+          "matchesPlayedOffset": 0,
           "bracket": null
         },
         {
-          "name": "EVE",
-          "matchesPlayedOffset": -1,
+          "name": "LIV",
+          "matchesPlayedOffset": 0,
           "bracket": null
         },
         {
@@ -83,11 +101,6 @@
       "points": 8,
       "clubs": [
         {
-          "name": "HUL",
-          "matchesPlayedOffset": -1,
-          "bracket": null
-        },
-        {
           "name": "NEW",
           "matchesPlayedOffset": -1,
           "bracket": null
@@ -96,7 +109,13 @@
     },
     {
       "points": 7,
-      "clubs": []
+      "clubs": [
+        {
+          "name": "CRY",
+          "matchesPlayedOffset": 0,
+          "bracket": null
+        }
+      ]
     },
     {
       "points": 6,
@@ -113,7 +132,7 @@
       "clubs": [
         {
           "name": "NFO",
-          "matchesPlayedOffset": -1,
+          "matchesPlayedOffset": 0,
           "bracket": null
         },
         {
@@ -126,11 +145,6 @@
     {
       "points": 4,
       "clubs": [
-        {
-          "name": "CRY",
-          "matchesPlayedOffset": -1,
-          "bracket": null
-        },
         {
           "name": "SUN",
           "matchesPlayedOffset": 0,
