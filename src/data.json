@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-12T01:53Z",
+  "lastUpdated": "2026-10-13T03:15Z",
   "matchesPlayed": 6,
   "table": [
     {
@@ -102,7 +102,7 @@
       "clubs": [
         {
           "name": "NEW",
-          "matchesPlayedOffset": -1,
+          "matchesPlayedOffset": 0,
           "bracket": null
         }
       ]
@@ -122,6 +122,11 @@
       "clubs": [
         {
           "name": "MUN",
+          "matchesPlayedOffset": 0,
+          "bracket": null
+        },
+        {
+          "name": "COV",
           "matchesPlayedOffset": 0,
           "bracket": null
         }
@@ -158,16 +163,11 @@
         {
           "name": "BOU",
           "matchesPlayedOffset": 0,
-          "bracket": null
+          "bracket": "relegation"
         },
         {
           "name": "TOT",
           "matchesPlayedOffset": 0,
-          "bracket": "relegation"
-        },
-        {
-          "name": "COV",
-          "matchesPlayedOffset": -1,
           "bracket": "relegation"
         }
       ]
