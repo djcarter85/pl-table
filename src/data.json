@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-23T01:03Z",
+  "lastUpdated": "2026-10-24T01:14Z",
   "matchesPlayed": 7,
   "table": [
     {
@@ -93,6 +93,11 @@
           "name": "EVE",
           "matchesPlayedOffset": 0,
           "bracket": null
+        },
+        {
+          "name": "IPS",
+          "matchesPlayedOffset": 1,
+          "bracket": null
         }
       ]
     },
@@ -101,11 +106,6 @@
       "clubs": [
         {
           "name": "HUL",
-          "matchesPlayedOffset": 0,
-          "bracket": null
-        },
-        {
-          "name": "IPS",
           "matchesPlayedOffset": 0,
           "bracket": null
         }
@@ -150,6 +150,11 @@
           "bracket": null
         },
         {
+          "name": "NFO",
+          "matchesPlayedOffset": 1,
+          "bracket": null
+        },
+        {
           "name": "TOT",
           "matchesPlayedOffset": 0,
           "bracket": null
@@ -157,7 +162,7 @@
         {
           "name": "COV",
           "matchesPlayedOffset": 0,
-          "bracket": null
+          "bracket": "relegation"
         }
       ]
     },
@@ -166,11 +171,6 @@
       "clubs": [
         {
           "name": "FUL",
-          "matchesPlayedOffset": 0,
-          "bracket": "relegation"
-        },
-        {
-          "name": "NFO",
           "matchesPlayedOffset": 0,
           "bracket": "relegation"
         }
