@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-02T01:57Z",
+  "lastUpdated": "2026-11-03T03:45Z",
   "matchesPlayed": 9,
   "table": [
     {
@@ -84,7 +84,13 @@
     },
     {
       "points": 13,
-      "clubs": []
+      "clubs": [
+        {
+          "name": "EVE",
+          "matchesPlayedOffset": 0,
+          "bracket": null
+        }
+      ]
     },
     {
       "points": 12,
@@ -121,7 +127,7 @@
         },
         {
           "name": "NEW",
-          "matchesPlayedOffset": -1,
+          "matchesPlayedOffset": 0,
           "bracket": null
         },
         {
@@ -133,13 +139,7 @@
     },
     {
       "points": 10,
-      "clubs": [
-        {
-          "name": "EVE",
-          "matchesPlayedOffset": -1,
-          "bracket": null
-        }
-      ]
+      "clubs": []
     },
     {
       "points": 9,
