@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-22T02:43Z",
+  "lastUpdated": "2026-11-23T03:20Z",
   "matchesPlayed": 11,
   "table": [
     {
@@ -37,7 +37,7 @@
       "clubs": [
         {
           "name": "BHA",
-          "matchesPlayedOffset": -1,
+          "matchesPlayedOffset": 0,
           "bracket": "championsLeague"
         },
         {
@@ -49,7 +49,13 @@
     },
     {
       "points": 21,
-      "clubs": []
+      "clubs": [
+        {
+          "name": "LIV",
+          "matchesPlayedOffset": 0,
+          "bracket": "championsLeague"
+        }
+      ]
     },
     {
       "points": 20,
@@ -65,11 +71,6 @@
         {
           "name": "BOU",
           "matchesPlayedOffset": 0,
-          "bracket": "championsLeague"
-        },
-        {
-          "name": "LIV",
-          "matchesPlayedOffset": -1,
           "bracket": null
         }
       ]
@@ -118,6 +119,11 @@
           "bracket": null
         },
         {
+          "name": "HUL",
+          "matchesPlayedOffset": 0,
+          "bracket": null
+        },
+        {
           "name": "AVL",
           "matchesPlayedOffset": 0,
           "bracket": null
@@ -147,11 +153,6 @@
     {
       "points": 11,
       "clubs": [
-        {
-          "name": "HUL",
-          "matchesPlayedOffset": -1,
-          "bracket": null
-        },
         {
           "name": "FUL",
           "matchesPlayedOffset": 0,
@@ -188,7 +189,7 @@
       "clubs": [
         {
           "name": "MUN",
-          "matchesPlayedOffset": -1,
+          "matchesPlayedOffset": 0,
           "bracket": "relegation"
         }
       ]
