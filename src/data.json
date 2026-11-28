@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-27T04:38Z",
+  "lastUpdated": "2026-11-28T04:23Z",
   "matchesPlayed": 11,
   "table": [
     {
@@ -95,7 +95,7 @@
       "clubs": [
         {
           "name": "CHE",
-          "matchesPlayedOffset": 0,
+          "matchesPlayedOffset": 1,
           "bracket": null
         },
         {
@@ -144,6 +144,11 @@
       "points": 12,
       "clubs": [
         {
+          "name": "NFO",
+          "matchesPlayedOffset": 1,
+          "bracket": null
+        },
+        {
           "name": "COV",
           "matchesPlayedOffset": 0,
           "bracket": null
@@ -172,11 +177,6 @@
     {
       "points": 9,
       "clubs": [
-        {
-          "name": "NFO",
-          "matchesPlayedOffset": 0,
-          "bracket": null
-        },
         {
           "name": "SUN",
           "matchesPlayedOffset": 0,
